@@ -1,3 +1,31 @@
 body * {
   outline: 1px solid lightgrey;
 }
+
+.container{
+  border: 3px solid red;
+}
+
+.main-nav li{
+  width: 18%;
+  display: inline-block;
+}
+
+.container.sub-menu{
+  border: 3px dashed green;
+}
+
+.blocks>span{
+  display: block;
+}
+
+.blocks>p{
+  color:green;
+}
+
+.inline{
+  border: 3px double green;
+}
+.inline>p{
+  display: inline-block;
+}
