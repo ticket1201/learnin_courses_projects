@@ -2,31 +2,31 @@ body * {
   outline: 1px solid lightgrey;
 }
 
-.container{
+div.container{
   border: 3px solid red;
 }
 
-.main-nav li{
+div.container.main-nav li{
   width: 18%;
   display: inline-block;
 }
 
-.container.sub-menu{
+div.container.sub-menu{
   border: 3px dashed green;
 }
 
-.blocks>span{
+div.container.blocks>span{
   display: block;
 }
 
-.blocks>p{
+div.container.blocks>p{
   color:green;
 }
 
-.inline{
+div.container.inline{
   border: 3px double green;
 }
-.inline>p{
+div.container.inline>p{
   display: inline-block;
   color:blue;
 }
