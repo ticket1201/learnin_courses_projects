@@ -7,7 +7,6 @@ div.container{
 }
 
 div.container.main-nav li{
-  width: 18%;
   display: inline-block;
 }
 
@@ -19,14 +18,14 @@ div.container.blocks>span{
   display: block;
 }
 
-div.container.blocks>p{
+div.container.blocks p{
   color:green;
 }
 
 div.container.inline{
   border: 3px double green;
 }
-div.container.inline>p{
+div.container.inline p{
   display: inline-block;
   color:blue;
 }
