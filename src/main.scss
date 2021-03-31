@@ -5,9 +5,19 @@ body * {
 .container{
   max-width: 1200px;
   margin: 0 auto;
-  height:100px
+  height: 120px;
 }
 
-footer{
-  background-color: #fb9c06;
+.wrapper_logo{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 300px;
 }
+
+nav {
+  box-sizing: border-box;
+  display: inline-flex;
+  background-color: red;
+ overflow: hidden;
+}
+
