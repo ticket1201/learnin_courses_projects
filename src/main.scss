@@ -15,12 +15,17 @@ header{
 
 .wrapper_logo{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 300px;
     height: 120px;
+    padding-bottom: 10px;
 }
 
-.logo_text{
+.logo_text, .banner p{
+  text-align: center;
+  font-family: 'Bebas Neue';
+  font-weight: bold;
+
   
 }
 
@@ -28,18 +33,78 @@ header{
   font-size: 34px;
   text-transform: uppercase;
   color: #6e6d6b;
+  margin-top: 10px;
+
+
 }
 
 .logo_text p:first-child{
   font-size: 19px;
   color: #fcb648;
   text-transform: none;
+  margin-bottom: 0px;
+  padding-top: 20px;
 }
 
 nav {
   box-sizing: border-box;
   display: flex;
-  width: 580px;
-  justify-content: space-between;
+  align-items: center;
+  width: 570px;
+  justify-content: space-around;
+  text-align: center;
 }
 
+nav a{
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  color: #9e9b9b;
+}
+
+div.banner{
+  height: 400px;
+  background-image:url(/img/big-orange-bg.png); 
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: 5px solid #fcba50;
+  border-bottom: 5px solid #fcba50;
+}
+
+div.banner_text{
+  width: 400px;
+  vertical-align: middle;
+  margin-left: 12px;
+}
+
+.banner p{
+  font-size: 34px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+ }
+ 
+div.banner .container{
+  margin-top: 130px;
+} 
+
+
+ .banner p:first-child{
+  color: #fcba50;
+  background-color: rgba(76,79,79,0.7);
+  width: 380px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+ .banner p:last-child{
+  margin-top: 27px;
+  color:  #6e6d6b;
+  background-color: rgba(252,199,88,0.7);
+  padding-bottom: 17px;
+  padding-top: 16px;
+ }
+ 
