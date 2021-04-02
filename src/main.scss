@@ -2,22 +2,44 @@ body * {
   outline: 1px solid lightgrey;
 }
 
+header{
+  display: flex;
+ justify-content: space-between;
+}
+
 .container{
   max-width: 1200px;
   margin: 0 auto;
-  height: 120px;
+
 }
 
 .wrapper_logo{
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     width: 300px;
+    height: 120px;
+}
+
+.logo_text{
+  
+}
+
+.logo_text  p{
+  font-size: 34px;
+  text-transform: uppercase;
+  color: #6e6d6b;
+}
+
+.logo_text p:first-child{
+  font-size: 19px;
+  color: #fcb648;
+  text-transform: none;
 }
 
 nav {
   box-sizing: border-box;
-  display: inline-flex;
-  background-color: red;
- overflow: hidden;
+  display: flex;
+  width: 580px;
+  justify-content: space-between;
 }
 
