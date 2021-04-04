@@ -4,7 +4,7 @@
 
 body{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  margin:0;
+  
 }
 
 header, .wrapper_column, .wrapper_logo{
@@ -17,12 +17,15 @@ header, .wrapper_column, .wrapper_logo{
   margin: 0 auto;
 }
 
+header.container{
+  max-height: 120px;
+}
 
 div.wrapper_logo{ 
   justify-content: space-evenly;
   align-items: center;
-  width: 300px;
   height: 120px;
+  margin-left: 20px;
  }
 
 .logo_text, .banner p{
@@ -32,31 +35,46 @@ div.wrapper_logo{
   font-weight: bold;
 }
 
+.logo_text{
+  margin: 0 40px;
+}
 
 .logo_text  p{
   font-size: 34px;
   color: #6e6d6b;
-  margin-top: 18px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+
 }
 
 .logo_text p:first-child{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 19px;
   color: #fcb648;
+  margin-top: 20px;
 }
 
 nav {
-  width: 570px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-around;
   text-align: center;
+  box-sizing: border-box;
 }
 
-nav a{
+a.nav_item{
   text-decoration: none;
+  box-sizing: border-box;
   font-weight: bold;
   color: #9e9b9b;
+  margin: 10px 20px;
+  
+
+}
+
+a.nav_item img{
+ max-width: 50px;
+ height: auto;
 }
 
 div.banner{
@@ -66,15 +84,22 @@ div.banner{
   background-size: cover;
   border-top: 5px solid #fcba50;
   border-bottom: 5px solid #fcba50;
+  
+}
+
+div.banner .container{
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 div.banner_text{
-  width: 400px;
+  max-width: 400px;
   margin-left: 12px;
   font-size: 34px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-top: 130px;
+
 }
 
 div.banner p:first-child{
@@ -95,18 +120,17 @@ div.banner p:last-child{
   padding-top: 16px;
 }
 
-div.column{
- padding-top: 25px;
-  padding-bottom: 30px;
+div.article-column{
+  padding: 25px 10px;
   font-size: 15px;
 }
 
-div.column p{
+div.article-column p{
   font-weight: bold;
   margin-bottom: 5px;
 }
   
-div.column a{
+div.article-column a{
   display: block;
   text-decoration: none;
   font-style: italic;
@@ -119,6 +143,7 @@ div.column a{
 div.column_item{
   text-align: center;
   max-width: 30%;
+  padding: 8px;
 }
 
 p.title_name{
@@ -142,10 +167,11 @@ p.pers_position{
 
   
 div.column_item img{
+  box-sizing: border-box;
   border: 9px solid #fcba50;
   border-radius: 100%;
   background-color: #fcba50;
-  max-width: 90%;
+  max-width: 100%;
   height: auto;
 }
   
