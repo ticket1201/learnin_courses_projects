@@ -4,7 +4,7 @@
 
 body{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
+  margin: 0px;
 }
 
 header, .wrapper_column, .wrapper_logo{
@@ -15,6 +15,7 @@ header, .wrapper_column, .wrapper_logo{
 .container{
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 header.container{
