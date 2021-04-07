@@ -1,3 +1,5 @@
+@import "./partials/article/article.scss";
+
 //body * {
  // outline: 1px solid lightgrey;
 //}
@@ -10,6 +12,7 @@ body{
 header, .wrapper_column, .wrapper_logo{
   display: flex;
   justify-content: space-between;
+  
 }
 
 .container{
@@ -121,25 +124,7 @@ div.banner p:last-child{
   padding-top: 16px;
 }
 
-div.article-column{
-  padding: 25px 10px;
-  font-size: 15px;
-}
 
-div.article-column p{
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-  
-div.article-column a{
-  display: block;
-  text-decoration: none;
-  font-style: italic;
-  color: #ffac00;
-  text-align: right;
-  margin-right: 20px;
-}
-  
 
 div.column_item{
   text-align: center;
