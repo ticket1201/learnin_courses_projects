@@ -1,3 +1,63 @@
 body * {
   outline: 1px solid lightgrey;
 }
+
+main.container{
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.wrapper__aquamarine{
+  margin: 40px auto;
+  background-color: aquamarine;
+  height: 100px;
+  width: 50%; 
+
+}
+
+.wrapper__flex{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.green{
+  background-color: green;
+  width: 30%;
+  height: 200px;
+}
+
+.wrapper_tree-columns{
+  margin: 40px 0;
+  font-size: 0;
+}
+
+.red{
+  display: inline-block;
+  background-color: red;
+  width: 33.3%;
+  height: 200px;
+  font-size: 1rem;
+}
+
+.blue{
+  display: inline-block;
+  background-color: blue;
+  width: 33.3%;
+  height: 200px;
+  font-size: 1rem;
+}
+
+.yellow{
+  display: inline-block;
+  background-color: yellow;
+  width: 33.3%;
+  height: 200px;
+font-size: 1rem;
+}
+
+footer{
+  background-color: grey;
+  width: 100%;
+  height: 100px;
+}
