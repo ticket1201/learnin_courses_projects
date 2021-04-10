@@ -4,11 +4,12 @@ body * {
 
 main.container{
   margin: 0 auto;
+  padding: 40px 20px;
   max-width: 1200px;
 }
 
 .wrapper__aquamarine{
-  margin: 40px auto;
+  margin: 0 auto;
   background-color: aquamarine;
   height: 100px;
   width: 50%; 
