@@ -1,15 +1,28 @@
 body{
   max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  
 }
 
 .star{
-  display: inline-block;
   height: 200px;
-  background-image: url(./img/start1.png);
+  width: 200px;
+  background-image: url(../img/start1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.star:hover{
+  background-image: url(../img/start2.png);
 }
 
 
+.star:hover~.star{ 
 
-.img:hover{
-  background-image: url(./img/start2.png);
+  background-image: url(../img/start2.png);
 }
+
