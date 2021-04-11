@@ -162,9 +162,17 @@ label{
   height: 35px; 
 }
  
-div.form_item:last-of-type input{
+textarea{
+  float: right;
+  width: 90%;
   height: 90px;
-  margin-bottom: 25px;
+  resize: none;
+  background-color: #f8f7f6;
+  border-width: 1px 0 0 4px;
+  border-style: outset;
+  border-color: #d2d0cf;
+  margin-bottom: 30px;
+ 
 }
 
 
