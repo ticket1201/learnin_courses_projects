@@ -1,3 +1,15 @@
-body * {
-  outline: 1px solid lightgrey;
+body{
+  max-width: 1200px;
+}
+
+.star{
+  display: inline-block;
+  height: 200px;
+  background-image: url(./img/start1.png);
+}
+
+
+
+.img:hover{
+  background-image: url(./img/start2.png);
 }
