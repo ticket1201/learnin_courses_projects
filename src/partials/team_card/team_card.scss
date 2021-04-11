@@ -1,0 +1,36 @@
+ div.team_card{
+    text-align: center;
+    width: 380px;
+    padding: 20px;
+ }
+ 
+ div.title_column{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  span.pers_name{
+    font-size: 22px;
+    color: #6e6d6b;
+  }
+  
+  span.pers_position{
+    font-size: 22px;
+    color:#fcba50;
+  }
+  
+    
+  div.team_card img{
+    box-sizing: border-box;
+    border: 9px solid #fcba50;
+    border-radius: 50%;
+    background-color: #fcba50;
+    max-width: 100%;
+    height: auto;
+  }
+    
+  p.pers_descr{
+    text-align: left;
+    padding-left: 55px;
+    font-size: 15px;
+  }

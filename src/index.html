@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="./main.scss">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <title>First project</title>
+  <title>Orange rabbit</title>
   <script src="./js/main.js" defer></script>
 </head>
 
@@ -63,51 +63,15 @@
     </div>
     <section class="section"> 
         <p class="title_name">Meet the team</p>
-      <div class="wrapper_column">
-
-        <div class="column_item">
-          <div class="title_column">
-            <p class="pers_name">Hoof</p>
-            <p class="pers_position">- Lead Designer</p>
-          </div>
-          <img src="./img/horse.png" alt="Lead Designer">
-          <p class="text_item">
-            Hoof is our most talanted designer.
-            However he's not the talkative type and I
-            would advise not getting on the wrong
-            side of him.
-          </p>
+        <div class="wrapper_column">
+         @@include('./partials/team_card/_team_card.html', {"NameText":"Hoof", "PositionText":"Lead Designer", "Img_src":"./img/horse.png", 
+         "Img_alt":"Lead Designer", "DescrText":"Hoof is our most talanted designer.  However he`s not the talkative type and I would advise not getting on the wrong side of him."})
+         @@include('./partials/team_card/_team_card.html', {"NameText":"Nibs", "PositionText":"CEO/Director", "Img_src":"./img/rabbit.png", 
+         "Img_alt":"CEO/Director", "DescrText":"Nibs is our go to woman. She’s the ceo/director of orange rabbit and runs fast when she has too."})
+         @@include('./partials/team_card/_team_card.html', {"NameText":"Squawk", "PositionText":"Developer", "Img_src":"./img/squawk.png", 
+         "Img_alt":"Developer", "DescrText":"Squawk is no social bunny. But when it comes to programming he stands out from the crowd."})
         </div>
-
-        <div class="column_item">
-          <div class="title_column">
-            <p class="pers_name">Nibs</p>
-            <p class="pers_position">- CEO/Director</p>
-          </div>
-          <img src="./img/rabbit.png" alt="CEO/Director">
-          <p class="text_item">
-            Nibs is our go to woman. She's the
-            ceo/director of orange rabbit and runs
-            fast when she has too.
-          </p>
-        </div>
-
-        <div class="column_item">
-          <div class="title_column">
-            <p class="pers_name">Squawk</p>
-            <p class="pers_position">- Developer</p>
-          </div>
-          <img src="./img/squawk.png" alt="Developer">
-          <p class="text_item">
-            Squawk is no social bunny. But when it
-            comes to programming he stands out
-            from the crowd.
-          </p>
-        </div>
-
-
-      </div>
-    </div>
+  
     <section class="section">
   
         <p class="title_name"> Send us a message...</p>
