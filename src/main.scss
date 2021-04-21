@@ -1,9 +1,9 @@
 @import "./partials/article/article.scss";
 @import "./partials/team_card/team_card.scss";
 
-//body * {
- // outline: 1px solid lightgrey;
-//}
+body * {
+  outline: 1px solid lightgrey;
+}
 
 body{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -20,11 +20,13 @@ header, .wrapper_column, .wrapper_logo{
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
+  position: relative;
 }
 
 header.container{
   max-height: 120px;
 }
+
 
 div.wrapper_logo{ 
   justify-content: space-evenly;
@@ -32,6 +34,12 @@ div.wrapper_logo{
   height: 120px;
   margin-left: 20px;
  }
+
+.wrapper_logo>img{
+  @media (max-width:800px) {
+    display: none;
+  }
+}
 
 .logo_text, .banner p{
   height: inherit;
@@ -65,6 +73,9 @@ nav {
   justify-content: space-around;
   text-align: center;
   box-sizing: border-box;
+  @media (max-width:800px) {
+    display: none;
+  }
 }
 
 a.nav_item{
@@ -82,6 +93,29 @@ a.nav_item img{
  height: auto;
 }
 
+
+
+
+ul.menu_hidden{
+ 
+ display: none;
+ position: absolute;
+ background-image: url('./img/menu.png');
+ background-size: contain;
+ list-style-type: none;
+ right: 10%;
+  @media (max-width:800px) {
+    display: block;
+  }
+}
+
+.menu_item{
+  position: relative;
+  white-space: nowrap;
+  right: 100%;
+  top: 120px;
+}
+
 div.banner{
   height: 400px;
   background-image:url(/img/big-orange-bg.png); 
@@ -89,8 +123,12 @@ div.banner{
   background-size: cover;
   border-top: 5px solid #fcba50;
   border-bottom: 5px solid #fcba50;
-  
+  @media (max-width:800px) {
+    height: auto;
+    background-position-x: 30%;
+  }
 }
+
 
 div.banner .container{
   display: flex;
@@ -104,7 +142,9 @@ div.banner_text{
   font-size: 34px;
   text-transform: uppercase;
   letter-spacing: 2px;
-
+  @media (max-width:800px) {
+    margin: auto;
+  }
 }
 
 div.banner p:first-child{
@@ -208,3 +248,8 @@ footer p{
 }
  
 
+div.response{
+ @media  (max-width: 800px) {
+  flex-direction: column;
+ }
+}

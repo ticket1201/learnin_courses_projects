@@ -43,8 +43,19 @@
         <p>contact</p>
       </a>
     </nav>
+   
+      <ul class="menu_hidden">
+        <li class="menu_item">Home</li>
+        <li class="menu_item">About</li>
+        <li class="menu_item">Work</li>
+        <li class="menu_item">Blog</li>
+        <li class="menu_item">Contact</li>
+      </ul>
+    </div>
+
   </header>
 
+    
   <div class="banner">
     <div class="container">
       <div class="banner_text">
@@ -54,7 +65,7 @@
     </div>
   </div>
   <main class="container">
-    <div class="wrapper_column">
+    <div class="wrapper_column response">
       @@include('./partials/article/_article.html', {"articleText":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis eveniet sit distinctio. Ab iste velit alias ratione accusantium quidem doloremque illum praesentium quos quaerat, distinctio sequi placeat? Ducimus, laboriosam dolore?"})
       @@include('./partials/article/_article.html', {"articleText":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis eveniet sit distinctio. Ab iste velit alias ratione accusantium quidem doloremque illum praesentium quos quaerat, distinctio sequi placeat? Ducimus, laboriosam dolore?"})
       @@include('./partials/article/_article.html', {"articleText":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis eveniet sit distinctio. Ab iste velit alias ratione accusantium quidem doloremque illum praesentium quos quaerat, distinctio sequi placeat? Ducimus, laboriosam dolore?"})
@@ -63,7 +74,7 @@
     </div>
     <section class="section"> 
         <p class="title_name">Meet the team</p>
-        <div class="wrapper_column">
+        <div class="wrapper_column response">
          @@include('./partials/team_card/_team_card.html', {"NameText":"Hoof", "PositionText":"Lead Designer", "Img_src":"./img/horse.png", 
          "Img_alt":"Lead Designer", "DescrText":"Hoof is our most talanted designer.  However he`s not the talkative type and I would advise not getting on the wrong side of him."})
          @@include('./partials/team_card/_team_card.html', {"NameText":"Nibs", "PositionText":"CEO/Director", "Img_src":"./img/rabbit.png", 

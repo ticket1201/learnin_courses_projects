@@ -2,6 +2,11 @@
     text-align: center;
     width: 380px;
     padding: 20px;
+    
+    @media  (max-width: 800px) {
+      width: 70%;
+      margin: 0 auto;
+    }
  }
  
  div.title_column{
@@ -31,6 +36,10 @@
     
   p.pers_descr{
     text-align: left;
-    padding-left: 55px;
+    padding-left: 18%;
     font-size: 15px;
+    @media (max-width:800px) {
+      padding-left: 0;
+     
+    }
   }
