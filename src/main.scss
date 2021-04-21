@@ -1,9 +1,9 @@
 @import "./partials/article/article.scss";
 @import "./partials/team_card/team_card.scss";
 
-body * {
-  outline: 1px solid lightgrey;
-}
+//body * {
+//  outline: 1px solid lightgrey;
+//}
 
 body{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -94,26 +94,55 @@ a.nav_item img{
 }
 
 
-
-
-ul.menu_hidden{
- 
- display: none;
- position: absolute;
- background-image: url('./img/menu.png');
- background-size: contain;
- list-style-type: none;
- right: 10%;
+.menu_hidden{
+  display: none;
+  position: absolute;
+  background-image: url('./img/menu.png');
+  background-size: contain;
+  right: 10%;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
   @media (max-width:800px) {
     display: block;
+    
   }
 }
+
+
+
+
+ul.menu_content{
+  display: none;
+  position: relative;
+  text-align: center;
+  color: #fcba50;
+  font-size: 18px;
+  top: 80%;
+  right: 80%;
+  list-style-type: none;
+  padding-left: 0;
+  background-color: rgba(53, 53, 53, 0.9);
+  z-index: 1;
+}
+
 
 .menu_item{
   position: relative;
   white-space: nowrap;
-  right: 100%;
-  top: 120px;
+  height: 50px;
+  border-bottom: 2px solid #fcba50;
+  padding-top:25px;
+  text-decoration: none;
+}
+
+.menu_item>a{
+  text-decoration: none;
+}
+
+
+.menu_hidden:hover .menu_content{
+  display: block;
 }
 
 div.banner{
