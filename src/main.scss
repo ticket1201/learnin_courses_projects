@@ -35,11 +35,11 @@ div.wrapper_logo{
   margin-left: 20px;
  }
 
-.wrapper_logo>img{
-  @media (max-width:800px) {
-    display: none;
-  }
-}
+ div.wrapper_logo>img{
+   @media (max-width:420px) {
+     display: none;
+   }
+ }
 
 .logo_text, .banner p{
   height: inherit;
@@ -78,19 +78,46 @@ nav {
   }
 }
 
-a.nav_item{
+a.nav-item{
   text-decoration: none;
   box-sizing: border-box;
   font-weight: bold;
   color: #9e9b9b;
   margin: 10px 20px;
+}
+
+
+
+.home-logo{
+  width: 55px; height: 47px;
+  background: url('/img/menu-items.png') -10px -10px;
+}
+
+.about-logo{
+  width: 23px; height: 44px;
+  background: url('/img/menu-items.png') -10px -131px;
   
+}
+
+.work-logo{
+  width: 43px; height: 43px;
+  background: url('/img/menu-items.png') -85px -10px;
+}
+
+.blog-logo{
+  width: 40px; height: 40px;
+  background: url('/img/menu-items.png') -148px -10px;
 
 }
 
-a.nav_item img{
- max-width: 50px;
- height: auto;
+.contact-logo{
+  width: 50px; height: 34px;
+  background: url('/img/menu-items.png') -10px -77px;
+  padding-bottom: 2px;
+}
+
+.margin-center{
+  margin: 0 auto;
 }
 
 
@@ -105,7 +132,7 @@ a.nav_item img{
   cursor: pointer;
   @media (max-width:800px) {
     display: block;
-    
+        
   }
 }
 
@@ -118,13 +145,14 @@ ul.menu_content{
   text-align: center;
   color: #fcba50;
   font-size: 18px;
-  top: 80%;
-  right: 80%;
+  top: 85%;
   list-style-type: none;
   padding-left: 0;
-  background-color: rgba(53, 53, 53, 0.9);
+  background-color: rgba(53, 53, 53, 0.85);
   z-index: 1;
+ 
 }
+
 
 
 .menu_item{
@@ -143,6 +171,7 @@ ul.menu_content{
 
 .menu_hidden:hover .menu_content{
   display: block;
+ 
 }
 
 div.banner{
@@ -167,7 +196,7 @@ div.banner .container{
 
 div.banner_text{
   max-width: 400px;
-  margin-left: 12px;
+  margin-left: 40px;
   font-size: 34px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -179,12 +208,10 @@ div.banner_text{
 div.banner p:first-child{
   color: #fcba50;
   background-color: rgba(76,79,79,0.7);
-  width: 380px;
-  margin-left: 10px;
+  padding: 11px;
   margin-bottom: 0px;
-  padding-top: 11px;
-  padding-bottom: 11px;
-}
+  white-space: nowrap;
+ }
 
 div.banner p:last-child{
   margin-top: 27px;
@@ -205,18 +232,21 @@ p.title_name{
   overflow: hidden;
 }
 
-label, input{
-  display: inline-block;
-}
+
+
 
 div.form_item{
-  display: block;
+  display: grid;
+  grid-template-columns: 10% 1fr;
+  grid-gap:2%;
   margin-bottom: 35px;
+  @media (max-width:800px) {
+    grid-template-columns:100%;
+    margin-bottom: 20px;
+    }
 }
 
 input{
-  float: right;
-  width: 90%;
   height: 31px;
   padding:0;
   background-color: #f8f7f6;
@@ -226,14 +256,12 @@ input{
 }
 
 label{
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #fb9c06;
   height: 35px; 
 }
  
 textarea{
-  float: right;
-  width: 90%;
   height: 90px;
   resize: none;
   background-color: #f8f7f6;

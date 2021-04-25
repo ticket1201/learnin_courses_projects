@@ -1,11 +1,14 @@
 div.article-column{
     padding: 25px 10px;
     font-size: 15px;
+    @media (max-width:800px) {
+      padding:10px;
+    }
   }
   
   div.article-column p{
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
     
   div.article-column a{
