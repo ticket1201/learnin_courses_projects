@@ -228,12 +228,6 @@ p.title_name{
   color: #fcba50;
 }
 
-.section{
-  overflow: hidden;
-}
-
-
-
 
 div.form_item{
   display: grid;
@@ -268,10 +262,15 @@ textarea{
   border-width: 1px 0 0 4px;
   border-style: outset;
   border-color: #d2d0cf;
-  margin-bottom: 30px;
+
  
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
 
 form button{
   float: right;
