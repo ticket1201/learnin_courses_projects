@@ -1,3 +1,19 @@
 body * {
   outline: 1px solid lightgrey;
 }
+
+.container{
+  max-width: 940px;
+}
+
+main{
+  max-width: 640px;
+}
+
+aside{
+  max-width: 300px;
+}
+
+footer{
+  max-height: 220px;
+}
