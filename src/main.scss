@@ -2,8 +2,13 @@ body * {
   outline: 1px solid lightgrey;
 }
 
+body{
+  margin: 0;
+}
+
 .container{
   max-width: 940px;
+  margin: 0 auto;
 }
 
 main{
@@ -16,4 +21,72 @@ aside{
 
 footer{
   max-height: 220px;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row{
+  display: flex;
+}
+
+.hot-news{
+  justify-content: start;
+  list-style-type: none;
+  margin-top: 30px;
+  margin-bottom: 22px;
+  padding-left: 0;
+  background-color: #d7d8d9;
+ & li{
+   cursor: pointer;
+   color: #333333;
+   padding: 8px 20px 8px 13px;
+   font-family: sans-serif;
+   font-size: 1.125em;
+ }
+ & li:hover{
+   background-color: #333333;
+   color: white;
+ }
+}
+
+.carousel{
+ 
+  border-bottom: 5px solid #c70000;
+
+ &-image{
+   width: 380px;
+   height: 250px;
+   background: url("./img/jurgen.png");
+   background-size: cover;
+ }
+
+ &-text{
+   background-color: #f7f9fa;
+   max-width: 340px;
+    &__title{
+     font-family: sans-serif;
+     font-size: 1.875em;
+     color: #c80000;
+    }
+ }
+} 
+
+
+
+.news-main-content__item{
+ &-img{
+
+ }
+ &-descr{
+
+ }
+}
+.news-feed{
+ 
+}
+.news-media{
+ 
 }

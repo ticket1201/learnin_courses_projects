@@ -1,39 +1,189 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./main.scss">
-    <title>Sports news</title>
-    <script src="./js/main.js" defer></script>
-  </head>
-  <body>
-    <div class="container">
-      <main>
-        <div class="nav">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-        <div class="carousel">
-            
-        </div>
-        <div class="main-news">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./main.scss">
+  <title>Sports news</title>
+  <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="flex-row">
+      <main>
+        <div class="flex-column">
+          <div class="nav">
+            <ul class="hot-news flex-row">
+              <li>Hot themes</li>
+              <li>EURO-2016 Playoffs</li>
+              <li>El'Classico</li>
+            </ul>
+          </div>
+          <div class="carousel flex-row">
+            <div class="carousel-image"></div>
+            <div class="carousel-text">
+              <p class="carousel-text__title">
+                Jurgen Klopp makes a sexy Liverpool
+              </p>
+              <div class="calousel-text__descr">
+                Liverpool outcast Jose Enrique set to
+                be handed lifeline by Jurgen Klopp
+              </div>
+              <!--  <div class="carousel-count">
+              <p>7/20</p>
+              <svg></svg> -->
+            </div>
+          </div>
+          <div class="news-main">
+            <p class="news-title">
+              Main News
+            </p>
+            <div class="news-main-content flex-row">
+              <div class="news-main-content__item">
+                <img src="./img/ball.png" alt="Ball" class="news-main-content__item-img">
+                <p class="news-main-content__item-descr">
+                  The FIFA Ballon d'Or is an annual association football award given by FIFA
+                </p>
+              </div>
+              <div class="news-main-content__item">
+                <img src="./img/messi.png" alt="Messi" class="news-main-content__item-img">
+                <p class="news-main-content__item-descr">
+                  Messi got some balloons
+                </p>
+              </div>
+              <div class="news-main-content__item">
+                <img src="./img/cr7.png" alt="CR7" class="news-main-content__item-img">
+                <p class="news-main-content__item-descr">
+                  CR7 also, but not so much
+                </p>
+              </div>
+              <div class="news-main-content__item">
+                <img src="./img/ribery.png" alt="Ribery" class="news-main-content__item-img">
+                <p class="news-main-content__item-descr">
+                  Ribery got vase!
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="last-column">
-          
+        <div class="flex-row">
+          <div class="news-feed flex-column">
+            <div class="news-column">
+              <p class="news-title">
+                Last News
+              </p>
+              <ul>
+                <li><a href="">real</a></li>
+                <li><a href="">swedes</a></li>
+                <li><a href="">2016</a></li>
+                <li><a href="">ancelotti</a></li>
+                <li><a href="">walters</a></li>
+                <li><a href="">adas</a></li>
+                <li><a href="">sadasd</a></li>
+                <li><a href="">adasd</a></li>
+                <li><a href="">hgfhf</a></li>
+                <li><a href="">asdas</a></li>
+              </ul>
+            </div>
+            <div class="news-column">
+              <p class="news-title">
+                Newsfeed
+              </p>
+              <div class="news-with-pic">
+                <img src="" alt="">
+                <p class="news-with-pic-text photo"></p>
+                <ul>
+                  <li>asdasd</li>
+                  <li>asdas</li>
+                  <li>asdas</li>
+                  <li>asdasd</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="news-media flex-column">
+            <div class="news-media__item">
+              <img src="" alt="">
+              <p class="news-media__text">asdasd</p>
+            </div>
+            <div class="news-media__item">
+              <img src="" alt="">
+              <p class="news-media__text">sadasd</p>
+            </div>
+            <div class="news-media__item">
+              <img src="" alt="">
+              <p class="news-media__text">asda</p>
+            </div>
+          </div>
         </div>
       </main>
-      <aside>
-        aside
-      </aside>
 
-      <footer>
-          footer
-      </footer>
+      <aside class="flex-column">
+        <div class="news-video flex-column">
+          <p class="news-title">
+            Видео
+          </p>
+          <div class="news-video-item">
+            <img src="" alt="">
+            <p class="news-video-item__text">asdoasjdas</p>
+          </div>
+          <div class="news-video-item">
+            <img src="" alt="">
+            <p class="news-video-item__text">asdoasjdas</p>
+          </div>
+          <div class="news-video-item">
+            <img src="" alt="">
+            <p class="news-video-item__text">asdoasjdas</p>
+          </div>
+          <div class="news-video-item">
+            <img src="" alt="">
+            <p class="news-video-item__text">asdoasjdas</p>
+          </div>
+          <div class="news-video-item">
+            <img src="" alt="">
+            <p class="news-video-item__text">asdoasjdas</p>
+          </div>
+        </div>
+        <div class="news-interesting flex-column">
+
+        </div>
+      </aside>
     </div>
-  </body>
+    <footer>
+      <p class="news-title">
+        Обзор
+      </p>
+      <div class="news-review flex-row">
+        <div class="news-review-item">
+          <p class="news-review-item__title">wasdasdasda</p>
+          <img src="" alt="">
+          <p class="news-review-item__text">wasdasdasda</p>
+        </div>
+        <div class="news-review-item">
+          <p class="news-review-item__title">wasdasdasda</p>
+          <img src="" alt="">
+          <p class="news-review-item__text">wasdasdasda</p>
+        </div>
+        <div class="news-review-item">
+          <p class="news-review-item__title">wasdasdasda</p>
+          <img src="" alt="">
+          <p class="news-review-item__text">wasdasdasda</p>
+        </div>
+        <div class="news-review-item">
+          <p class="news-review-item__title">wasdasdasda</p>
+          <img src="" alt="">
+          <p class="news-review-item__text">wasdasdasda</p>
+        </div>
+        <div class="news-review-item">
+          <p class="news-review-item__title"></p>
+          <img src="" alt="">
+          <p class="news-review-item__text"></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>
