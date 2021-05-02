@@ -9,11 +9,12 @@
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <title>Sports news</title>
   <script src="./js/main.js" defer></script>
+  <script src="https://kit.fontawesome.com/b1cf813757.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <div class="container">
-    <div class="flex-row">
+    <div class="flex-row justify-content-space-betwen">
       <main>
         <div class="flex-column">
           <div class="nav">
@@ -117,65 +118,74 @@
       <aside class="flex-column">
         <div class="news-video_wrapper flex-column">
           <div class="news-title">
-            <p class="news-title__text text-align-center text-color-purple">Видео</p>
+            <p class="news-title__text text-align-center text-color-purple text-transform-uppercase">Видео</p>
           </div>
-          <div class="news-video-item">
-            <img src="" alt="">
-            <p class="news-video-item__text">asdoasjdas</p>
+          @@include('./partials/news-video-item/_news-video-item.html',
+          {"Img_src":"./img/caput.png", "Img_alt":"Caput",
+          "VideoText":"Фильм дня: Гитлер Капут!"})
+          @@include('./partials/news-video-item/_news-video-item.html',
+          {"Img_src":"./img/sobchak.png", "Img_alt":"Sobchak",
+          "VideoText":"Ксения собчак беременна"})
+          @@include('./partials/news-video-item/_news-video-item.html',
+          {"Img_src":"./img/bita.png", "Img_alt":"Bita",
+          "VideoText":"Группа парней избила влюбленную пару бейсбольной битой"})
+          @@include('./partials/news-video-item/_news-video-item.html',
+          {"Img_src":"./img/music-comedy.png", "Img_alt":"Music comedy",
+          "VideoText":"Небесные ласточки: двухсерийная музыкальная комедия"})
+          @@include('./partials/news-video-item/_news-video-item.html',
+          {"Img_src":"./img/girls-troubles.png", "Img_alt":"Girls troubles",
+          "VideoText":"На дополнительном кастинге &quot;Хочу в ВИА Гру&quot; девушек просили"})
+          <div class="news-title border-width-5px">
+            <p class="news-title__text  text-align-top"> <a href="" class="text-color-blue">Больше видео &rarr;</a></p>
           </div>
-          <div class="news-video-item">
-            <img src="" alt="">
-            <p class="news-video-item__text">asdoasjdas</p>
-          </div>
-          <div class="news-video-item">
-            <img src="" alt="">
-            <p class="news-video-item__text">asdoasjdas</p>
-          </div>
-          <div class="news-video-item">
-            <img src="" alt="">
-            <p class="news-video-item__text">asdoasjdas</p>
-          </div>
-          <div class="news-video-item">
-            <img src="" alt="">
-            <p class="news-video-item__text">asdoasjdas</p>
-          </div>
+
         </div>
         <div class="news-interesting flex-column">
-
+          <div class="news-title border-width-5px">
+            <p class="news-title__text  text-align-top font-size-24px">Интересные статьи</p>
+          </div>
+          @@include('./partials/news-interesting__item/_news-interesting__item.html',
+          {"Img_src":"./img/politican.png", "Img_alt":"Politican",
+          "DescrText":"Испанский политик полностью оделась для глянца"})
+          @@include('./partials/news-interesting__item/_news-interesting__item.html',
+          {"Img_src":"./img/anjeline.png", "Img_alt":"Anjeline Jolly",
+          "DescrText":"Анджелина Джоли сильно похудела"})
+          @@include('./partials/news-interesting__item/_news-interesting__item.html',
+          {"Img_src":"./img/girls-story.png", "Img_alt":"14yo girl",
+          "DescrText":"Исполнить мечту и умереть: История 14-летней девочки..."})
+          @@include('./partials/news-interesting__item/_news-interesting__item.html',
+          {"Img_src":"./img/Bilik.png", "Img_alt":"Irina Bilik",
+          "DescrText":"Ирина Билык сказала, что думает о повзрослевшей Алине..."})
+          @@include('./partials/news-interesting__item/_news-interesting__item.html',
+          {"Img_src":"./img/dont-do.png", "Img_alt":"Politican",
+          "DescrText":" 7 &quot;смертных грехов&quot;&#58; чего нельзя делать в отношениях"})
+          <div class="news-title border-width-5px margin-top-10px"></div>
         </div>
       </aside>
     </div>
     <footer>
-      <p class="news-title">
-        Обзор
-      </p>
-      <div class="news-review flex-row">
-        <div class="news-review-item">
-          <p class="news-review-item__title">wasdasdasda</p>
-          <img src="" alt="">
-          <p class="news-review-item__text">wasdasdasda</p>
-        </div>
-        <div class="news-review-item">
-          <p class="news-review-item__title">wasdasdasda</p>
-          <img src="" alt="">
-          <p class="news-review-item__text">wasdasdasda</p>
-        </div>
-        <div class="news-review-item">
-          <p class="news-review-item__title">wasdasdasda</p>
-          <img src="" alt="">
-          <p class="news-review-item__text">wasdasdasda</p>
-        </div>
-        <div class="news-review-item">
-          <p class="news-review-item__title">wasdasdasda</p>
-          <img src="" alt="">
-          <p class="news-review-item__text">wasdasdasda</p>
-        </div>
-        <div class="news-review-item">
-          <p class="news-review-item__title"></p>
-          <img src="" alt="">
-          <p class="news-review-item__text"></p>
-        </div>
+      <div class="news-title">
+        <p class="news-title__text">Обзор</p>
       </div>
+      <div class="news-review flex-row">
+        @@include('./partials/news-review__item/_news-review__item.html',
+        {"TitleText":"Знакомства", "Img_src":"./img/movie-real.png", "Img_alt":"Gypsy",
+        "DescrText":"Отношения актеров в кино и в реальной жизни"})
+        @@include('./partials/news-review__item/_news-review__item.html',
+        {"TitleText":"Знакомства", "Img_src":"./img/movie-real-man.png", "Img_alt":"Man workouting",
+        "DescrText":"Отношения актеров в кино и в реальной жизни"})
+        @@include('./partials/news-review__item/_news-review__item.html',
+        {"TitleText":"Знакомства", "Img_src":"./img/meeting.png", "Img_alt":"Meeting",
+        "DescrText":"Отношения актеров в кино и в реальной жизни"})
+        @@include('./partials/news-review__item/_news-review__item.html',
+        {"TitleText":"Приколы", "Img_src":"./img/man-with-paper.png", "Img_alt":"Man with paper",
+        "DescrText":"Отношения актеров в кино и в реальной жизни"})
+        @@include('./partials/news-review__item/_news-review__item.html',
+        {"TitleText":"Авто", "Img_src":"./img/car.png", "Img_alt":"Gypsy",
+        "DescrText":"Отношения актеров в кино и в реальной жизни"})
+       
+      </div>
+
     </footer>
   </div>
 </body>

@@ -1,0 +1,21 @@
+.news-review__item{
+    max-width: 140px;
+      
+    &-title{
+        color: #c80000;
+        font-size: 0.875rem;
+        margin:10px 0;
+    }
+    &-descr{
+        font-family: 'PT Sans', sans-serif;
+        font-size:  0.875rem;
+        font-weight: 700;
+        margin:8px 0;
+        }
+}
+.news-review__item img{
+    width: 140px;
+    height: auto;
+}
+
+

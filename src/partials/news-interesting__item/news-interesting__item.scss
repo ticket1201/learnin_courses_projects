@@ -1,0 +1,18 @@
+.news-iteresting__item{
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 10px 0;
+    & img{
+        width: 100px;
+        height: auto;
+        border:  1px solid #bfbfc0;
+    }
+    & p{
+        margin: 0 0 0 8px;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 1.125rem;
+    }
+}
+
