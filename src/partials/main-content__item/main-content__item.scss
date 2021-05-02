@@ -1,0 +1,13 @@
+.main-content__item{
+    max-width: 140px;
+    &-descr{
+        font-family: 'PT Sans', sans-serif;
+        font-size: 1em;
+        text-align: left;
+        margin-top: 4px;
+        margin-bottom: 50px;
+    }
+}
+.main-content__item img{
+    width: 100%;
+}

@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./main.scss">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <title>Sports news</title>
   <script src="./js/main.js" defer></script>
 </head>
@@ -37,94 +39,86 @@
             </div>
           </div>
           <div class="news-main">
-            <p class="news-title">
-              Main News
-            </p>
+            <div class="news-title">
+              <p class="news-title__text">Main News</p>
+            </div>
             <div class="news-main-content flex-row">
-              <div class="news-main-content__item">
-                <img src="./img/ball.png" alt="Ball" class="news-main-content__item-img">
-                <p class="news-main-content__item-descr">
-                  The FIFA Ballon d'Or is an annual association football award given by FIFA
-                </p>
-              </div>
-              <div class="news-main-content__item">
-                <img src="./img/messi.png" alt="Messi" class="news-main-content__item-img">
-                <p class="news-main-content__item-descr">
-                  Messi got some balloons
-                </p>
-              </div>
-              <div class="news-main-content__item">
-                <img src="./img/cr7.png" alt="CR7" class="news-main-content__item-img">
-                <p class="news-main-content__item-descr">
-                  CR7 also, but not so much
-                </p>
-              </div>
-              <div class="news-main-content__item">
-                <img src="./img/ribery.png" alt="Ribery" class="news-main-content__item-img">
-                <p class="news-main-content__item-descr">
-                  Ribery got vase!
-                </p>
-              </div>
+              @@include('./partials/main-content__item/_main-content__item.html',
+              {"Img_src":"./img/ball.png", "Img_alt":"Golden ball",
+              "DescrText":"The FIFA Ballon d'Or is an annual association football award given by FIFA"})
+              @@include('./partials/main-content__item/_main-content__item.html',
+              {"Img_src":"./img/messi.png", "Img_alt":"Messi with golden ball", "DescrText":"Messi got some balloons"})
+              @@include('./partials/main-content__item/_main-content__item.html',
+              {"Img_src":"./img/cr7.png", "Img_alt":"CR7", "DescrText":"CR7 also, but not so much"})
+              @@include('./partials/main-content__item/_main-content__item.html',
+              {"Img_src":"./img/ribery.png", "Img_alt":"Ribery", "DescrText":"Ribery got vase!"})
             </div>
           </div>
         </div>
-        <div class="flex-row">
+        <article class="flex-row">
           <div class="news-feed flex-column">
             <div class="news-column">
-              <p class="news-title">
-                Last News
-              </p>
-              <ul>
-                <li><a href="">real</a></li>
-                <li><a href="">swedes</a></li>
-                <li><a href="">2016</a></li>
-                <li><a href="">ancelotti</a></li>
-                <li><a href="">walters</a></li>
-                <li><a href="">adas</a></li>
-                <li><a href="">sadasd</a></li>
-                <li><a href="">adasd</a></li>
-                <li><a href="">hgfhf</a></li>
-                <li><a href="">asdas</a></li>
+              <div class="news-title border-color-red">
+                <p class="news-title__text text-color-blue">
+                  Last News
+                </p>
+              </div>
+              <ul class="news-feed_content">
+                <li><a href="">Real Madrid players to gaffer: up and at 'em!</a></li>
+                <li><a href="">Swedes indebted to talismanic Ibrahimovic</a></li>
+                <li><a href="">2016 European Championship to go ahead in France</a></li>
+                <li><a href="">Ancelotti: "Premier League return is my no. 1 choice"</a></li>
+                <li><a href="">Walters double secures Euro 2016 spot for Ireland</a></li>
+                <li><a href="">"They intended to set off an explosive inside the stadium" - eyewitness</a></li>
+                <li><a href="">Raúl bids goodbye in style</a></li>
+                <li><a href="">Five reasons Belgium vs. Spain was called off</a></li>
+                <li><a href="">Niggles won't keep Benzema out of 'Clásico'</a></li>
+                <li><a href="">Abdeslam suspected to have been near King Baudouin Stadium</a></li>
               </ul>
+
             </div>
             <div class="news-column">
-              <p class="news-title">
-                Newsfeed
-              </p>
-              <div class="news-with-pic">
-                <img src="" alt="">
-                <p class="news-with-pic-text photo"></p>
-                <ul>
-                  <li>asdasd</li>
-                  <li>asdas</li>
-                  <li>asdas</li>
-                  <li>asdasd</li>
-                </ul>
+              <div class="news-title border-color-red">
+                <p class="news-title__text text-color-blue">
+                  Newsfeed
+                </p>
               </div>
+              <div class="news-with-pic flex-row">
+                <img src="./img/Zlatan.png" alt="Zlatan">
+                <a href="" class="news-with-pic-text"> Zlatan Ibrahimovic on target as Sweden qualify
+                  with draw in Denmark</a>
+              </div>
+              <ul class="news-feed_content">
+                <li> <a href="">Alvaro Morata insists Juventus are “still hungry”
+                    and targets victory over Milan on Saturday.</a>
+                </li>
+                <li> <a href="">Ecuador stay perfect as Argentina, Brazil win</a> </li>
+                <li> <a href="">Sweden, Ukraine complete Euro line-up</a> </li>
+                <li> <a href="">Aubameyang penalty gives Gabon World Cup joy</a> </li>
+              </ul>
             </div>
           </div>
           <div class="news-media flex-column">
-            <div class="news-media__item">
-              <img src="" alt="">
-              <p class="news-media__text">asdasd</p>
-            </div>
-            <div class="news-media__item">
-              <img src="" alt="">
-              <p class="news-media__text">sadasd</p>
-            </div>
-            <div class="news-media__item">
-              <img src="" alt="">
-              <p class="news-media__text">asda</p>
-            </div>
+            @@include('./partials/news-media__item/_news-media__item.html',
+            {"Img_src":"./img/prothy.png", "Img_alt":"Champions league cup",
+            "mediaText":"Here is how Leage Champions trophy looks like"})
+
+            @@include('./partials/news-media__item/_news-media__item.html',
+            {"Img_src":"./img/casillas.png", "Img_alt":"Casillas",
+            "mediaText":"Casillas got some peace of paper"})
+
+            @@include('./partials/news-media__item/_news-media__item.html',
+            {"Img_src":"./img/fan_girls.png", "Img_alt":"Fangirls",
+            "mediaText":"Bayern Munich vs Barcelona. Fangirls &colon;&rpar;"})
           </div>
-        </div>
+        </article>
       </main>
 
       <aside class="flex-column">
-        <div class="news-video flex-column">
-          <p class="news-title">
-            Видео
-          </p>
+        <div class="news-video_wrapper flex-column">
+          <div class="news-title">
+            <p class="news-title__text text-align-center text-color-purple">Видео</p>
+          </div>
           <div class="news-video-item">
             <img src="" alt="">
             <p class="news-video-item__text">asdoasjdas</p>
