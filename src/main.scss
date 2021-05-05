@@ -1,12 +1,9 @@
 @import "./partials/main-content__item/main-content__item.scss";
-@import "./partials/news-media__item/news-media__item.scss";
-@import "./partials/news-video-item/news-video-item.scss";
-@import "./partials/news-interesting__item/news-interesting__item.scss";
 @import "./partials/news-review__item/news-review__item.scss";
 
-body * {
-  outline: 1px solid lightgrey;
-}
+//body * {
+//  outline: 1px solid lightgrey;
+//}
 
 body{
   margin: 0;
@@ -28,7 +25,22 @@ article{
 
 aside{
  max-width: 300px;
+ padding: 30px 0;
 }
+
+footer{
+  margin-bottom: 60px;
+}
+
+a{
+  text-decoration: none;
+  color: #333333;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
 
 
 .flex-column{
@@ -63,7 +75,7 @@ aside{
 .carousel{
  
   border-bottom: 5px solid #c70000;
-  
+  margin-bottom: 32px;
 
  &-image{
    width: 380px;
@@ -94,20 +106,32 @@ aside{
 .news-title{
   position: relative;
   border-bottom: 2px solid black;
-  margin: 45px 0 10px 0;
+  margin: 13px 0;
   &__text{
     position: absolute;
     background-color: white;
     font-family: 'PT Sans', sans-serif;
     font-size: 1.5em;
     margin: 0;
-    padding: 0 12px 0 0;
     top: -20px;
   }
 }
 
+.news-title__text.text-color-purple.text-transform-uppercase{
+  top:-10px;
+}
+
+.padding-0-12px{
+  padding: 0 12px;
+}
+
+.padding-right-12px{
+  padding-right: 12px;
+}
+
 .news-main-content{
   justify-content: space-between;
+  min-height: 220px;
 }
 
 .news-feed{
@@ -189,9 +213,14 @@ aside{
   width: 300px;
 }
 
-.news-title__text.text-align-center{
-  padding: 0 5px;
-  left: calc(50% - 37.5px);
+.news-video__item{
+  margin: 10px auto;
+}
+
+.justify-content-center{
+  justify-content: center;
+  vertical-align: middle;
+  padding: 0 12px;
 }
 
 .news-title__text.text-color-purple{
@@ -199,7 +228,11 @@ aside{
   font-family: 'PT Sans', sans-serif;
   font-size: 1.125rem;
   font-weight: 700;
-  top:-11px;
+ 
+}
+
+.more-videos{
+  padding: 20px 0;
 }
 
 .news-title.border-width-5px{
@@ -212,6 +245,7 @@ aside{
    text-decoration: none;
  }
 }
+
 
 .news-interesting{
   padding:30px 0 20px 0;
