@@ -31,62 +31,84 @@
               <a>Jurgen Klopp makes a sexy Liverpool</a>
             </p>
             <p class="calousel-text__descr font-family--PT-sans">
-             <a href="">Liverpool outcast Jose Enrique set to
-              be handed lifeline by Jurgen Klopp</a> 
+              <a href="">Liverpool outcast Jose Enrique set to
+                be handed lifeline by Jurgen Klopp</a>
             </p>
-            <!--  <div class="carousel-count">
-              <p>7/20</p>
-              <svg></svg> -->
+            <div class="carousel-count">
+              <i class="fas fa-angle-left"></i>
+              <span>
+                <p class="carousel-count__text font-family--PT-sans">7/20</p>
+              </span>
+              <object data="./img/circle.svg" height="18px" width="18px"></object>
+              <i class="fas fa-angle-right"></i>
+            </div>
           </div>
         </div>
         <div class="news-main">
           <div class="news-title">
             <p class="news-title__text padding-right--12px font-family--PT-sans">Main News</p>
           </div>
-          <div class="news-main-content flex-row justify-content--space-betwen">
-            @@include('./partials/main-content__item/_main-content__item.html',
-            {"Img_src":"./img/ball.png",
-            "Img_alt":"Golden ball",
-            "DescrText":"The FIFA Ballon d'Or is an annual association football award given by FIFA",
-            "newsWidth":"",
-            "flowDrirection":"",
-            "descrSize":"",
-            "fontWeight":"",
-            "marginLeft":"",
-            "fontSize":""})
-
-            @@include('./partials/main-content__item/_main-content__item.html',
-            {"Img_src":"./img/messi.png",
-            "Img_alt":"Messi with golden ball",
-            "DescrText":"Messi got some balloons",
-            "newsWidth":"",
-            "flowDrirection":"",
-            "descrSize":"",
-            "fontWeight":"",
-            "marginLeft":"",
-            "fontSize":""})
-
-            @@include('./partials/main-content__item/_main-content__item.html',
-            {"Img_src":"./img/cr7.png",
-            "Img_alt":"CR7",
-            "DescrText":"CR7 also, but not so much",
-            "newsWidth":"",
-            "flowDrirection":"",
-            "descrSize":"",
-            "fontWeight":"",
-            "marginLeft":"",
-            "fontSize":""})
-
-            @@include('./partials/main-content__item/_main-content__item.html',
-            {"Img_src":"./img/ribery.png",
-            "Img_alt":"Ribery",
-            "DescrText":"Ribery got vase!",
-            "newsWidth":"",
-            "flowDrirection":"",
-            "descrSize":"",
-            "fontWeight":"",
-            "marginLeft":"",
-            "fontSize":""})
+          <div class="news-main_content flex-row">
+            <div>
+              @@include('./partials/main-content__item/_main-content__item.html',
+              {"Img_src":"./img/ball.png",
+              "Img_alt":"Golden ball",
+              "DescrText":"The FIFA Ballon d'Or is an annual association football award given by FIFA",
+              "newsWidth":"",
+              "flowDrirection":"",
+              "descrSize":"",
+              "fontWeight":"",
+              "marginLeft":"",
+              "fontSize":"",
+              "icon-on-image":"",
+              "iconAfterText":""
+              })
+            </div>
+            <div>
+              @@include('./partials/main-content__item/_main-content__item.html',
+              {"Img_src":"./img/messi.png",
+              "Img_alt":"Messi with golden ball",
+              "DescrText":"Messi got some balloons",
+              "newsWidth":"",
+              "flowDrirection":"",
+              "descrSize":"",
+              "fontWeight":"",
+              "marginLeft":"",
+              "fontSize":"",
+              "icon-on-image":"",
+              "iconAfterText":""
+              })
+            </div>
+            <div>
+              @@include('./partials/main-content__item/_main-content__item.html',
+              {"Img_src":"./img/cr7.png",
+              "Img_alt":"CR7",
+              "DescrText":"CR7 also, but not so much",
+              "newsWidth":"",
+              "flowDrirection":"",
+              "descrSize":"",
+              "fontWeight":"",
+              "marginLeft":"",
+              "fontSize":"",
+              "icon-on-image":"",
+              "iconAfterText":""
+              })
+            </div>
+            <div>
+              @@include('./partials/main-content__item/_main-content__item.html',
+              {"Img_src":"./img/ribery.png",
+              "Img_alt":"Ribery",
+              "DescrText":"Ribery got vase!",
+              "newsWidth":"",
+              "flowDrirection":"",
+              "descrSize":"",
+              "fontWeight":"",
+              "marginLeft":"",
+              "fontSize":"",
+              "icon-on-image":"",
+              "iconAfterText":"icon-camera"
+              })
+            </div>
           </div>
         </div>
       </div>
@@ -100,12 +122,12 @@
             </div>
             <ul class="news-feed_content font-family--PT-sans">
               <li><a href="">Real Madrid players to gaffer: up and at 'em!</a></li>
-              <li><a href="">Swedes indebted to talismanic Ibrahimovic</a></li>
+              <li><a href="">Swedes indebted to talismanic Ibrahimovic<span class="source">marca.com</span></a></li>
               <li><a href="">2016 European Championship to go ahead in France</a></li>
               <li><a href="">Ancelotti: "Premier League return is my no. 1 choice"</a></li>
               <li><a href="">Walters double secures Euro 2016 spot for Ireland</a></li>
               <li><a href="">"They intended to set off an explosive inside the stadium" - eyewitness</a></li>
-              <li><a href="">Raúl bids goodbye in style</a></li>
+              <li><a href="" class="icon-camera">Raúl bids goodbye in style</a><span class="icon-play"></span></li>
               <li><a href="">Five reasons Belgium vs. Spain was called off</a></li>
               <li><a href="">Niggles won't keep Benzema out of 'Clásico'</a></li>
               <li><a href="">Abdeslam suspected to have been near King Baudouin Stadium</a></li>
@@ -120,30 +142,34 @@
             </div>
             <div class="news-with-pic flex-row justify-content--space-betwen">
               <img src="./img/Zlatan.png" alt="Zlatan">
-              <a href="" class="news-with-pic-text font-family--PT-sans"> Zlatan Ibrahimovic on target as Sweden qualify
+              <a href="" class="news-with-pic-text font-family--PT-sans icon-camera"> Zlatan Ibrahimovic on target as
+                Sweden qualify
                 with draw in Denmark</a>
             </div>
             <ul class="news-feed_content font-family--PT-sans">
               <li> <a href="" class="font-family--PT-sans">Alvaro Morata insists Juventus are “still hungry”
                   and targets victory over Milan on Saturday.</a>
               </li>
-              <li> <a href="">Ecuador stay perfect as Argentina, Brazil win</a> </li>
-              <li> <a href="">Sweden, Ukraine complete Euro line-up</a> </li>
+              <li> <a href="" class="icon-play">Ecuador stay perfect as Argentina, Brazil win</a> </li>
+              <li> <a href="">Sweden, Ukraine complete Euro line-up<span class="source">fifa.com</span></a> </li>
               <li> <a href="">Aubameyang penalty gives Gabon World Cup joy</a> </li>
             </ul>
           </div>
         </div>
         <div class="news-media">
+
           @@include('./partials/main-content__item/_main-content__item.html',
           {"Img_src":"./img/trophy.png",
           "Img_alt":"Champions league cup",
           "DescrText":"Here is how Leage Champions trophy looks like",
           "newsWidth":"newsWidth--220px",
           "fontWeight":"fontWeight--bold",
-          "fontSize":"fontSize-18px",
+          "fontSize":"fontSize--18px",
           "flowDrirection":"",
           "descrSize":"",
-          "marginLeft":""
+          "marginLeft":"",
+          "icon-on-image":"camera-red",
+          "iconAfterText":""
           })
 
           @@include('./partials/main-content__item/_main-content__item.html',
@@ -152,10 +178,12 @@
           "DescrText":"Casillas got some peace of paper",
           "newsWidth":"newsWidth--220px",
           "fontWeight":"fontWeight--bold",
-          "fontSize":"fontSize-18px",
+          "fontSize":"fontSize--18px",
           "flowDrirection":"",
           "descrSize":"",
-          "marginLeft":""
+          "marginLeft":"",
+          "icon-on-image":"camera-red",
+          "iconAfterText":""
           })
 
           @@include('./partials/main-content__item/_main-content__item.html',
@@ -164,10 +192,12 @@
           "DescrText":"Bayern Munich vs Barcelona. Fangirls &colon;&rpar;",
           "newsWidth":"newsWidth--220px",
           "fontWeight":"fontWeight--bold",
-          "fontSize":"fontSize-18px",
+          "fontSize":"fontSize--18px",
           "flowDrirection":"",
           "descrSize":"",
-          "marginLeft":""
+          "marginLeft":"",
+          "icon-on-image":"camera-red",
+          "iconAfterText":""
           })
 
         </div>
@@ -177,7 +207,8 @@
     <aside>
       <div class="news-video__wrapper">
         <div class="news-title flex-row justify-content--center padding--0-12px">
-          <p class="news-title__text text-color--purple font-family--PT-sans text-transform--uppercase padding--0-12px">Видео</p>
+          <p class="news-title__text text-color--purple font-family--PT-sans text-transform--uppercase padding--0-12px">
+            Видео</p>
         </div>
         <div class="news-video__item">
           @@include('./partials/main-content__item/_main-content__item.html',
@@ -189,7 +220,9 @@
           "descrSize":"descrSize--Big",
           "fontWeight":"fontWeight--bold",
           "marginLeft":"marginLeft--10px",
-          "fontSize":""
+          "fontSize":"",
+          "icon-on-image":"play-icon",
+          "iconAfterText":""
           })
         </div>
         <div class="news-video__item">
@@ -202,7 +235,9 @@
           "descrSize":"descrSize--Big",
           "fontWeight":"fontWeight--bold",
           "marginLeft":"marginLeft--10px",
-          "fontSize":""
+          "fontSize":"",
+          "icon-on-image":"play-icon",
+          "iconAfterText":""
           })
         </div>
         <div class="news-video__item">
@@ -215,7 +250,9 @@
           "descrSize":"descrSize--Big",
           "fontWeight":"fontWeight--bold",
           "marginLeft":"marginLeft--10px",
-          "fontSize":""
+          "fontSize":"",
+          "icon-on-image":"play-icon",
+          "iconAfterText":""
           })
         </div>
         <div class="news-video__item">
@@ -228,7 +265,9 @@
           "descrSize":"descrSize--Big",
           "fontWeight":"fontWeight--bold",
           "marginLeft":"marginLeft--10px",
-          "fontSize":""
+          "fontSize":"",
+          "icon-on-image":"play-icon",
+          "iconAfterText":""
           })
         </div>
         <div class="news-video__item">
@@ -241,7 +280,9 @@
           "descrSize":"descrSize--Big",
           "fontWeight":"fontWeight--bold",
           "marginLeft":"marginLeft--10px",
-          "fontSize":""
+          "fontSize":"",
+          "icon-on-image":"play-icon",
+          "iconAfterText":""
           })
         </div>
 
@@ -268,7 +309,9 @@
           "descrSize":"descrSize--Biggest",
           "fontWeight":"",
           "marginLeft":"marginLeft--10px",
-          "fontSize":""
+          "fontSize":"",
+          "icon-on-image":"",
+          "iconAfterText":""
           })
         </div>
 
@@ -281,7 +324,9 @@
           "descrSize":"descrSize--Biggest",
           "fontWeight":"",
           "marginLeft":"marginLeft--10px",
-          "fontSize":""
+          "fontSize":"",
+          "icon-on-image":"",
+          "iconAfterText":"icon-camera"
           })
         </div>
         <div>
@@ -293,7 +338,9 @@
           "descrSize":"descrSize--Biggest",
           "fontWeight":"",
           "marginLeft":"marginLeft--10px",
-          "fontSize":""
+          "fontSize":"",
+          "icon-on-image":"",
+          "iconAfterText":""
           })
         </div>
         <div>
@@ -305,7 +352,9 @@
           "descrSize":"descrSize--Biggest",
           "fontWeight":"",
           "marginLeft":"marginLeft--10px",
-          "fontSize":""
+          "fontSize":"",
+          "icon-on-image":"",
+          "iconAfterText":""
           })
         </div>
         <div>
@@ -317,7 +366,9 @@
           "descrSize":"descrSize--Big",
           "fontWeight":"",
           "marginLeft":"marginLeft--10px",
-          "fontSize":""
+          "fontSize":"",
+          "icon-on-image":"",
+          "iconAfterText":""
           })
         </div>
 
@@ -330,21 +381,32 @@
       <p class="news-title__text padding-right--12px">Обзор</p>
     </div>
     <div class="news-review flex-row">
-      @@include('./partials/news-review__item/_news-review__item.html',
-      {"TitleText":"Знакомства", "Img_src":"./img/movie-real.png", "Img_alt":"Gypsy",
-      "DescrText":"Отношения актеров в кино и в реальной жизни"})
-      @@include('./partials/news-review__item/_news-review__item.html',
-      {"TitleText":"Знакомства", "Img_src":"./img/movie-real-man.png", "Img_alt":"Man workouting",
-      "DescrText":"Отношения актеров в кино и в реальной жизни"})
-      @@include('./partials/news-review__item/_news-review__item.html',
-      {"TitleText":"Знакомства", "Img_src":"./img/meeting.png", "Img_alt":"Meeting",
-      "DescrText":"Отношения актеров в кино и в реальной жизни"})
-      @@include('./partials/news-review__item/_news-review__item.html',
-      {"TitleText":"Приколы", "Img_src":"./img/man-with-paper.png", "Img_alt":"Man with paper",
-      "DescrText":"Отношения актеров в кино и в реальной жизни"})
-      @@include('./partials/news-review__item/_news-review__item.html',
-      {"TitleText":"Авто", "Img_src":"./img/car.png", "Img_alt":"Gypsy",
-      "DescrText":"Отношения актеров в кино и в реальной жизни"})
+      <div>
+        @@include('./partials/news-review__item/_news-review__item.html',
+        {"TitleText":"Знакомства", "Img_src":"./img/movie-real.png", "Img_alt":"Gypsy",
+        "DescrText":"Отношения актеров в кино и в реальной жизни"})
+      </div>
+      <div>
+        @@include('./partials/news-review__item/_news-review__item.html',
+        {"TitleText":"Знакомства", "Img_src":"./img/movie-real-man.png", "Img_alt":"Man workouting",
+        "DescrText":"Отношения актеров в кино и в реальной жизни"})
+      </div>
+      <div>
+        @@include('./partials/news-review__item/_news-review__item.html',
+        {"TitleText":"Знакомства", "Img_src":"./img/meeting.png", "Img_alt":"Meeting",
+        "DescrText":"Отношения актеров в кино и в реальной жизни"})
+      </div>
+      <div>
+        @@include('./partials/news-review__item/_news-review__item.html',
+        {"TitleText":"Приколы", "Img_src":"./img/man-with-paper.png", "Img_alt":"Man with paper",
+        "DescrText":"Отношения актеров в кино и в реальной жизни"})
+      </div>
+      <div>
+        @@include('./partials/news-review__item/_news-review__item.html',
+        {"TitleText":"Авто", "Img_src":"./img/car.png", "Img_alt":"Gypsy",
+        "DescrText":"Отношения актеров в кино и в реальной жизни"})
+      </div>
+
 
     </div>
 

@@ -1,7 +1,10 @@
 .news{
-    
     max-width: 140px;
     padding: 0 8px;
+
+@media (max-width:650px) {
+      margin: 8px auto;
+}
 
     &__descr{
         font-family: 'PT Sans', sans-serif;
@@ -21,29 +24,26 @@
 
 .newsWidth--300px{
     max-width: 300px;
+    @media (max-width:620px) {
+    max-width: 100%;
+    }
 }
 
 
 .descrSize--Big{
     width: 55%; 
     flex-shrink: 0;
+    @media (max-width:620px) {
+        width: 100%;
+      }
 }
 
 .descrSize--Biggest{
     width: 65%;
     flex-shrink: 0;
+    @media (max-width:620px) {
+        width: 100%;
+      }
 }
 
-.marginLeft--10px{
-    margin-left: 10px;
-}
 
-
-
-.fontWeight--bold{
-    font-weight: bold;
-}
-
-.fontSize-18px{
-    font-size: 1.125rem;
-}
