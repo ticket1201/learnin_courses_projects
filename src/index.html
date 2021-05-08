@@ -14,11 +14,11 @@
 
 <body class="container">
 
-  <div class="flex-row justify-content-space-betwen">
+  <div class="flex-row justify-content--space-betwen">
     <main>
-      <div class="flex-column">
+      <div class="top-wrapper">
         <div class="nav">
-          <ul class="hot-news flex-row">
+          <ul class="hot-news flex-row font-family--PT-sans">
             <li>Hot themes</li>
             <li>EURO-2016 Playoffs</li>
             <li>El'Classico</li>
@@ -27,13 +27,13 @@
         <div class="carousel flex-row">
           <div class="carousel-image"></div>
           <div class="carousel-text">
-            <p class="carousel-text__title">
-              Jurgen Klopp makes a sexy Liverpool
+            <p class="carousel-text__title font-family--PT-sans">
+              <a>Jurgen Klopp makes a sexy Liverpool</a>
             </p>
-            <div class="calousel-text__descr">
-              Liverpool outcast Jose Enrique set to
-              be handed lifeline by Jurgen Klopp
-            </div>
+            <p class="calousel-text__descr font-family--PT-sans">
+             <a href="">Liverpool outcast Jose Enrique set to
+              be handed lifeline by Jurgen Klopp</a> 
+            </p>
             <!--  <div class="carousel-count">
               <p>7/20</p>
               <svg></svg> -->
@@ -41,9 +41,9 @@
         </div>
         <div class="news-main">
           <div class="news-title">
-            <p class="news-title__text padding-right-12px">Main News</p>
+            <p class="news-title__text padding-right--12px font-family--PT-sans">Main News</p>
           </div>
-          <div class="news-main-content flex-row">
+          <div class="news-main-content flex-row justify-content--space-betwen">
             @@include('./partials/main-content__item/_main-content__item.html',
             {"Img_src":"./img/ball.png",
             "Img_alt":"Golden ball",
@@ -90,15 +90,15 @@
           </div>
         </div>
       </div>
-      <article class="flex-row">
-        <div class="news-feed flex-column">
+      <article class="flex-row justify-content--space-betwen">
+        <div class="news-feed">
           <div class="news-column">
-            <div class="news-title border-color-red">
-              <p class="news-title__text padding-right-12px text-color-blue">
+            <div class="news-title border-color--red">
+              <p class="news-title__text padding-right--12px text-color--blue">
                 Last News
               </p>
             </div>
-            <ul class="news-feed_content">
+            <ul class="news-feed_content font-family--PT-sans">
               <li><a href="">Real Madrid players to gaffer: up and at 'em!</a></li>
               <li><a href="">Swedes indebted to talismanic Ibrahimovic</a></li>
               <li><a href="">2016 European Championship to go ahead in France</a></li>
@@ -113,18 +113,18 @@
 
           </div>
           <div class="news-column">
-            <div class="news-title border-color-red">
-              <p class="news-title__text padding-right-12px text-color-blue">
+            <div class="news-title border-color--red">
+              <p class="news-title__text padding-right--12px text-color--blue">
                 Newsfeed
               </p>
             </div>
-            <div class="news-with-pic flex-row">
+            <div class="news-with-pic flex-row justify-content--space-betwen">
               <img src="./img/Zlatan.png" alt="Zlatan">
-              <a href="" class="news-with-pic-text"> Zlatan Ibrahimovic on target as Sweden qualify
+              <a href="" class="news-with-pic-text font-family--PT-sans"> Zlatan Ibrahimovic on target as Sweden qualify
                 with draw in Denmark</a>
             </div>
-            <ul class="news-feed_content">
-              <li> <a href="">Alvaro Morata insists Juventus are “still hungry”
+            <ul class="news-feed_content font-family--PT-sans">
+              <li> <a href="" class="font-family--PT-sans">Alvaro Morata insists Juventus are “still hungry”
                   and targets victory over Milan on Saturday.</a>
               </li>
               <li> <a href="">Ecuador stay perfect as Argentina, Brazil win</a> </li>
@@ -175,9 +175,9 @@
     </main>
 
     <aside>
-      <div class="news-video_wrapper">
-        <div class="news-title flex-row justify-content-center">
-          <p class="news-title__text text-color-purple text-transform-uppercase padding-0-12px">Видео</p>
+      <div class="news-video__wrapper">
+        <div class="news-title flex-row justify-content--center padding--0-12px">
+          <p class="news-title__text text-color--purple font-family--PT-sans text-transform--uppercase padding--0-12px">Видео</p>
         </div>
         <div class="news-video__item">
           @@include('./partials/main-content__item/_main-content__item.html',
@@ -246,9 +246,9 @@
         </div>
 
         <div class="more-videos">
-          <div class="news-title border-width-5px">
-            <p class="news-title__text text-align-top">
-              <a href="" class="text-color-blue">Больше видео &rarr;</a>
+          <div class="news-title border-width--5px">
+            <p class="news-title__text text-align--top font-family--PT-sans">
+              <a href="" class="text-color--blue">Больше видео &rarr;</a>
             </p>
           </div>
         </div>
@@ -256,7 +256,7 @@
       </div>
       <div class="news-interesting">
         <div class="news-title">
-          <p class="news-title__text  text-align-top font-size-24px">Интересные статьи</p>
+          <p class="news-title__text  text-align--top font-size--24px">Интересные статьи</p>
         </div>
 
         <div>
@@ -321,13 +321,13 @@
           })
         </div>
 
-        <div class="news-title  border-width-5px margin-top-10px"></div>
+        <div class="news-title  border-width--5px margin-top--10px"></div>
       </div>
     </aside>
   </div>
   <footer>
     <div class="news-title">
-      <p class="news-title__text padding-right-12px">Обзор</p>
+      <p class="news-title__text padding-right--12px">Обзор</p>
     </div>
     <div class="news-review flex-row">
       @@include('./partials/news-review__item/_news-review__item.html',

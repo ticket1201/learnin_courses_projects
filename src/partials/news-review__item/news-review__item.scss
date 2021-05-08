@@ -1,8 +1,7 @@
-
-
 .news-review__item{
     max-width: 140px;
-   
+    padding: 0 8px;
+
     &-title{
         color: #c80000;
         font-size: 0.875rem;
@@ -17,6 +16,7 @@
         
         }
 }
+
 .news-review__item img{
     width: 140px;
     height: auto;
