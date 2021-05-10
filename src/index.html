@@ -47,6 +47,7 @@
         <div class="news-main">
           <div class="news-title">
             <p class="news-title__text padding-right--12px">Main News</p>
+            <div class="news-title__line"></div>
           </div>
           <div class="news-main_content">
             <div class="news-main_item">
@@ -115,10 +116,11 @@
       <article>
         <div class="news-feed">
           <div class="news-column">
-            <div class="news-title border-color--red">
+            <div class="news-title ">
               <p class="news-title__text padding-right--12px text-color--blue">
                 Last News
               </p>
+              <div class="news-title__line border-color--red"></div>
             </div>
             <ul class="news-feed_content">
               <li><a href="">Real Madrid players to gaffer: up and at 'em!</a></li>
@@ -135,10 +137,11 @@
 
           </div>
           <div class="news-column">
-            <div class="news-title border-color--red">
+            <div class="news-title">
               <p class="news-title__text padding-right--12px text-color--blue">
                 Newsfeed
               </p>
+              <div class="news-title__line border-color--red"></div>
             </div>
             <div class="news-with-pic">
               <img src="./img/Zlatan.png" alt="Zlatan">
@@ -206,9 +209,11 @@
     </div>  
     <aside>
       <div class="news-video__wrapper">
-        <div class="news-title-center padding--0-12px">
+        <div class="news-title-center">
           <p class="news-title__text text-color--purple text-transform--uppercase padding--0-12px">
-            Видео</p>
+            Видео
+          </p>
+          <div class="news-title__line-middle"></div>  
         </div>
         <div class="news-video__item">
           @@include('./partials/main-content__item/_main-content__item.html',
@@ -287,19 +292,19 @@
         </div>
 
         <div class="more-videos">
-          <div class="news-title border-width--5px">
-            <p class="news-title__text text-align--top">
-              <a href="" class="text-color--blue">Больше видео &rarr;</a>
-            </p>
-          </div>
+          <p class="news-title__text">
+            <a href="" class="text-color--blue">Больше видео &rarr;</a>
+          </p>
+          <div class="news-title__line border-width--5px"></div>
         </div>
 
       </div>
-      <div class="news-interesting">
-        <div class="news-title">
-          <p class="news-title__text  text-align--top font-size--24px">Интересные статьи</p>
-        </div>
-
+      <div class="news-interesting__wrapper">
+         <div class="news-title">
+          <p class="news-title__text font-size--24px">Интересные статьи</p>
+          <div class="news-title__line "></div>
+         </div>
+      <div class="news-interesting">    
         <div>
           @@include('./partials/main-content__item/_main-content__item.html',
           {"Img_src":"./img/politican.png", "Img_alt":"Politican",
@@ -371,14 +376,17 @@
           "iconAfterText":""
           })
         </div>
-
-        <div class="news-title  border-width--5px margin-top--10px"></div>
+      </div>
+        <div class="news-title ">
+          <div class="news-title__line border-width--5px"></div>
+        </div>
       </div>
     </aside>
  </div> 
   <footer>
     <div class="news-title">
       <p class="news-title__text padding-right--12px">Обзор</p>
+      <div class="news-title__line"></div>
     </div>
     <div class="news-review">
       <div>
@@ -411,7 +419,6 @@
     </div>
 
   </footer>
-
 </body>
 
 </html>
