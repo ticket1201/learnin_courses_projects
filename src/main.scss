@@ -1,3 +1,147 @@
 body * {
   outline: 1px solid lightgrey;
 }
+
+body{
+  max-width: 100vw;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header{
+ display: flex;
+ justify-content: flex-end;
+ max-width: 1600px;
+ height: 145px;
+
+ & i{
+  font-size: 40px;
+ }
+}
+
+main{
+  position: absolute;
+  top: 0px;
+  background-image: url("./img/main.png");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+.icons__wrapper{
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  &>div{
+    margin: 10px;
+  }
+}
+
+
+.search__wrapper{
+  cursor: pointer;
+}
+
+.menu__wrapper{
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  margin: 10px;
+  list-style-type: none;
+  &:hover .menu__items{
+    display: block;
+  }
+  & i{
+    font-size: 24px;
+    border: 10px solid black;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+  }
+}
+
+.menu__items{
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  right: -50%;
+  padding: 5px;
+  font-size: 1.25rem;
+  background-color: rgba($color: #cecece, $alpha: 0.75)  ;
+  border-radius: 5px;
+  box-shadow: 6px 6px 14px 4px rgba(0, 0, 0, 0.3);
+
+  & li{
+    padding: 5px;
+  }
+  & li:hover{
+    color: black;
+    background-color: #e6e6e6;
+    border-bottom: 2px solid white;
+    border-radius: 5px;
+  }
+}
+
+.container{
+  
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo{
+  position: relative;
+  top: 32px;
+  width: 174px;
+  height: 174px;
+  margin: 10px;
+  background-image: url("./img/Logo.png");
+  
+}
+
+.top__wrapper{
+  max-width: 570px;
+}
+
+.top__button{
+  width: 385px;
+  height: 95px;
+  background-color: black;
+ 
+  & p{
+    color: white;
+  }
+}
+
+h1{
+  font-size: 72px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.top__icons{
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+.icon-drink {
+  width: 50px; height: 48px;
+  background: url('./img/sprites.png') -10px -73px;
+}
+
+.icon-icecream {
+  width: 41px; height: 54px;
+  background: url('./img/sprites.png') -155px -10px;
+}
+
+.icon-special {
+  width: 57px; height: 43px;
+  background: url('./img/sprites.png') -10px -10px;
+}
+
+.icon-sweets {
+  width: 48px; height: 47px;
+  background: url('./img/sprites.png') -87px -10px;
+}
