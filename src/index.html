@@ -7,38 +7,40 @@
   <link rel="stylesheet" href="./main.scss">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Empat Belas</title>
   <script src="./js/main.js" defer></script>
   <script src="https://kit.fontawesome.com/b1cf813757.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header>
-
-    <div class="icons__wrapper">
-      <div class="search__wrapper">
-        <i class="fas fa-search"></i>
-      </div>
-      <ul class="menu__wrapper">
-        <i class="fas fa-bars"></i>
-        <div class="menu__items">
-          <li>About</li>
-          <li>Events</li>
-          <li>Location</li>
-          <li>Booking</li>
-        </div>
-      </ul>
+  <div class="icons__wrapper">
+    <div class="search__wrapper">
+      <i class="fas fa-search"></i>
     </div>
-
-  </header>
+    <ul class="menu__wrapper">
+      <i class="fas fa-bars"></i>
+      <div class="menu__items">
+        <li>About</li>
+        <li>Events</li>
+        <li>Location</li>
+        <li>Booking</li>
+      </div>
+    </ul>
+  </div>
   <main>
     <div class="container">
-      <div class="logo"></div>
       <div class="top__wrapper">
-        <h1 class="top__text">
-          Delicious & fresh baked Sweets
-        </h1>
-        <div class="top__button"><p>veiew menu</p></div>
+        <div class="logo"></div>
+        <div class="top__text">
+          <h1>Delicious & fresh baked Sweets</h1>
+        </div>
+        <div class="top__button">
+          <p>veiw menu </p>
+          <span class="material-icons">
+            east
+          </span>
+        </div>
         <div class="top__icons">
           <div class="icon-sweets"></div>
           <div class="icon-icecream"></div>
@@ -48,6 +50,35 @@
       </div>
     </div>
   </main>
-</body>
+  <article>
+    <div class="container">
+      <div class="two-column__wrapper">
+        <div class="column">
+          <div class="column__image">
+            <img src="./img/image-top.png" alt="donut with chocolate">
+          </div>
+          @@include
+          <div class="column__image">
+            <img src="./img/image-top.png" alt="sweet donut">
+          </div>
+        </div>
+        <div class="column">
+          @@include
+          <div class="column__image">
 
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <section>
+    <div class="gradient"></div>
+    <div class="container">
+      <div class="comment__wrapper">
+
+      </div>
+    </div>
+  </section>
+</body>
+ 
 </html>

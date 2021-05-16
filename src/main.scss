@@ -3,38 +3,29 @@ body * {
 }
 
 body{
-  max-width: 100vw;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
 }
 
-header{
- display: flex;
- justify-content: flex-end;
- max-width: 1600px;
- height: 145px;
-
- & i{
-  font-size: 40px;
- }
-}
-
 main{
-  position: absolute;
-  top: 0px;
   background-image: url("./img/main.png");
   background-size: cover;
-  height: 100vh;
-  width: 100vw;
-  z-index: 1;
+  min-height: 100vh;
+  max-width: 100vw;
 }
 
 .icons__wrapper{
+  position: absolute;
+  top: 37px;
+  right: 160px;
   display: flex;
   align-items: center;
   z-index: 10;
   &>div{
     margin: 10px;
+  }
+  & i{
+    font-size: 40px;
   }
 }
 
@@ -84,46 +75,71 @@ main{
 }
 
 .container{
-  
   max-width: 1200px;
   margin: 0 auto;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+
+.top__wrapper{
+  padding-top: 27px;
 }
 
 .logo{
-  position: relative;
-  top: 32px;
   width: 174px;
   height: 174px;
-  margin: 10px;
   background-image: url("./img/Logo.png");
   
 }
 
-.top__wrapper{
-  max-width: 570px;
-}
+.top__text{
+  display: flex;
+  align-items: center;
 
-.top__button{
-  width: 385px;
-  height: 95px;
-  background-color: black;
- 
-  & p{
-    color: white;
+  & h1{
+    font-size: 72px;
+    text-transform: uppercase;
+    margin: 140px 0 85px;
+    width: 570px;
+
   }
 }
 
-h1{
-  font-size: 72px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: left;
+.top__button{
+  width: 382px;
+  height: 94px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 13px;
+  color: #ffffff;
+  background: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  
+  & p{
+    text-transform: uppercase;
+    font-size: 24px;
+    
+  }
+  & span{
+    font-size: 30px;
+  
+  }
+  .btn:hover {
+    text-decoration: none;
+  }
 }
 
+
+
 .top__icons{
-  display: flex;
-  justify-content: flex-start;
-  
+  padding: 60px 0;
+  & div{
+    display: inline-block;
+    margin: 0px 50px 0 0;
+  }
 }
 
 .icon-drink {
@@ -144,4 +160,40 @@ h1{
 .icon-sweets {
   width: 48px; height: 47px;
   background: url('./img/sprites.png') -87px -10px;
+}
+
+
+.two-column__wrapper{
+  display: flex;
+  padding: 185px 0 145px;
+  justify-content: space-between;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  max-width: 570px;
+  padding: 0 15px;
+ &__image{
+   max-width: 100%;
+   height: auto;
+ }
+}
+
+
+section{
+  position: relative;
+  background-image: url("./img/colorful-set-plate.png");
+  height: 700px;
+ & .gradient{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background: rgba($color: #292929, $alpha: 0.6);
+ }
+}
+
+.comment__wrapper{
+  max-width: 100px;
+  max-height: 410px;
 }
