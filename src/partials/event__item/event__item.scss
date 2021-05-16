@@ -1,0 +1,37 @@
+.event__item{
+    display: flex;
+    flex-direction: row;
+    max-width: 600px;
+    height: 225px;
+    margin-bottom: 25px;
+}
+  
+
+.event__img{
+    max-width: 270px;
+    height: auto;
+
+}
+
+.event__text{
+    margin-left: 30px;
+    font-size: 14px;
+}
+
+.event__name{
+    font-size: 21px;
+    font-weight: bold;
+    margin: 35px 0 2px;
+  }
+.event__date{
+    font-style: italic;
+    margin: 2px 0;
+}
+.event__location{
+    margin: 5px 0;
+    font-style: italic;
+}
+  
+.event__descr{
+    font-size: 16px;
+}

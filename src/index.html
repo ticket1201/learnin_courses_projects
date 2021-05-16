@@ -59,13 +59,13 @@
           </div>
           @@include
           <div class="column__image">
-            <img src="./img/image-top.png" alt="sweet donut">
+            <img src="./img/image-bot.png" alt="six donuts in box">
           </div>
         </div>
         <div class="column">
           @@include
           <div class="column__image">
-
+            <img src="./img/douts-3.png" alt="six donuts in box">
           </div>
         </div>
       </div>
@@ -74,11 +74,87 @@
   <section>
     <div class="gradient"></div>
     <div class="container">
-      <div class="comment__wrapper">
-
+      <div class="carousel">
+        <div class="carousel__image">
+        </div>
+        <div class="carousel__text">
+          Best food I’ve ever tasted. It melts in my mouth
+          and makes me keep wanting more and more.
+          I will definitely recommend this to people I know.
+          No jokes and everytime they made it fresh.
+          Good job you guys ! I am now your loyal fan..
+        </div>
+        <div class="carousel__user">
+          <p>
+            <span class="username">Stacy</span>,<span class="user-location">My City</span>
+          </p>
+        </div>
+        <div class="carousel__dots">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
     </div>
   </section>
+  <div class="event">
+    <div class="container">
+      <div class="event__title">
+        <p>
+          Upcoming event
+        </p>
+        <p>Check Our Place Near You</p>
+      </div>
+      <div class="two-column__wrapper">
+        <div class="column">
+          @@include('./partials/event__item/_event__item.html',
+          {"Img_src":"./img/spices.png",
+          "Img_alt":"Spices",
+          "Event_name":"Night Spices",
+          "Event_date":"08.00 PM - 28/01/2021",
+          "Event_location":"Our Place at YourStreet 12.3",
+          "Event_descr":"Ready for adventurous night with us?",})
+
+          @@include('./partials/event__item/_event__item.html',
+          {"Img_src":"./img/baker.png",
+          "Img_alt":"Baker",
+          "Event_name":"Bake a Cake",
+          "Event_date":"10.00 АM - 31/01/2021",
+          "Event_location":"Our Place at YourStreet 12.3",
+          "Event_descr":"Cake anyone?",})
+        </div>
+        <div class="column">
+          <div class="main-event__item">
+            <div class="main-event__img">
+              <img src="./img/table.png" alt="table">
+            </div>
+            <div class="main-event__text">
+              <div class="main-event__date">
+                <p class="date-numb">14</p>
+                <p class="date-month">February</p>
+              </div>
+              <p class="main-event__name">
+                 Special Valentine Day
+              </p>
+              <p class="main-event__location">
+                18.00 PM - Deck Floor Your Street 123
+              </p>
+              <p class="main-event__descr">
+                Special Appearance:
+                <span>Name your Artist here</span>
+              </p>
+              <div class="top__button small">
+                <p>buy ticket</p>
+                <span class="material-icons">
+                  east
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
- 
+
 </html>
