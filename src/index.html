@@ -169,14 +169,14 @@
             <div class="address">
               <p class="address__title">Store1</p>
               <p class="address__street">Street name with number 123</p>
-              <p class="adress__city">12554 - My City</p>
-              <p class="adress__phone">Phone: 123 2252 6565</p>
+              <p class="address__city">12554 - My City</p>
+              <a class="address__phone" href="tel:+123-2252-6565">Phone: 123 2252 6565</a>
             </div>
             <div class="address">
               <p class="address__title">Store2</p>
               <p class="address__street">Street name with number 123</p>
-              <p class="adress__city">12554 - My City</p>
-              <p class="adress__phone">Phone: 123 2252 6565</p>
+              <p class="address__city">12554 - My City</p>
+              <a class="address__phone" href="tel:+123-2252-6565">Phone: 123 2252 6565</a>
             </div>
             <p class="location__email">Email us:
               <a href="mailto:abc@youremail.com">abc@youremail.com</a>
@@ -202,7 +202,7 @@
         </p>
 
         <form action="/test" method="POST" class="form" id="form1">
-          <input type="text" placeholder="Name" class="input-name"> 
+          <input type="text" placeholder="Name" class="input-name">
           <select name="location-select" id="location-select" aria-placeholder="Location">
             <option value="address1">Location</option>
             <option value="address1">address 1</option>
@@ -222,7 +222,46 @@
   </div>
   <footer>
     <div class="container">
-      
+      <div class="column">
+        <img src="./img/Logo_white.png" alt="Logo_white">
+        <p>Your company addres here
+          <a href="tel:+1-444-15136" class="address__phone">phone number 1 444 15136</a>
+        </p>
+        <p class="location__email">Email address:
+          <a href="mailto:abc@youremail.com">abc@youremail.com</a>
+        </p>
+      </div>
+      <div class="column">
+        <div class="footer__navigation">
+          <a href="">Home</a>
+          <a href="">Our Story</a>
+          <a href="">Testimonials</a>
+          <a href="">Events</a>
+          <a href="">Locations</a>
+          <a href="">Booking</a>
+          <a href="">Terms of Service</a>
+        </div>
+        <div class="social__logos">
+          <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+          <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div class="column">
+        
+          <div class="address">
+            <p class="address__title">Store1</p>
+            <p class="address__street">Street name with number 123</p>
+            <p class="address__city">12554 - My City</p>
+            <a class="address__phone" href="tel:+123-2252-6565">Phone: 123 2252 6565</a>
+          </div>
+          <div class="address">
+            <p class="address__title">Store2</p>
+            <p class="address__street">Street name with number 123</p>
+            <p class="address__city">12554 - My City</p>
+            <a class="address__phone" href="tel:+123-2252-6565">Phone: 123 2252 6565</a>
+          </div>
+          <a href="" class="join-program__link">Be our partner and join our partner programs</a>
     </div>
   </footer>
 </body>

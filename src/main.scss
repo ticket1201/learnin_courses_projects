@@ -379,7 +379,7 @@ section{
   &__email{
     font-weight: bold;
     & a{
-      color: black;
+      color: inherit;
       font-weight: normal;
     }
   }
@@ -394,7 +394,12 @@ section{
   &__title{
     font-size: 1em;
     font-weight: bold;
-    margin: 12px 0;
+    margin: 5px 0;
+  }
+
+  &__phone{
+    text-decoration: none;
+    color: inherit;
   }
 
 }
@@ -417,6 +422,7 @@ section{
     text-transform: uppercase;
     font-size: 36px;
     font-weight: bold;
+    margin: 20px 0;
   }
  
    &__text{
@@ -473,4 +479,62 @@ section{
 footer{
   background-color: black;
   height: 420px;
+  color: #434343;
+  font-size: 14px;
+  
+  & .column{
+    min-height: 270px;
+    padding-right: 70px;
+  }
+
+  & .container{
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  & a{
+    display: block;
+    color: #434343;
+  }
+  & img{
+    width: 120px;
+    height: auto;
+    margin: 18px 0 20px;
+  }
+  & p{
+    margin: 10px 0;
+  }
+  
+  .footer__navigation{
+    width: 200px;
+    padding: 9px 0;
+    & a{
+      margin: 6px 0;
+      text-decoration: none;
+      
+    }
+  }
+
+
+  & .social__logos{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    width: 110px;
+    & i{
+      font-size: 21px;
+    }
+  }
+  
+  & .location__email{
+    text-decoration: none;
+    font-weight: normal;
+    & a{
+      font-style: italic;
+    }
+   
+  }
+  & .join-program__link{
+    margin: 10px 0;
+  }
 }
