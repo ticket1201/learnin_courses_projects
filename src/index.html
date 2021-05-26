@@ -21,14 +21,15 @@
     <ul class="menu__wrapper">
       <i class="fas fa-bars"></i>
       <div class="menu__items">
-        <li>About</li>
-        <li>Events</li>
-        <li>Location</li>
-        <li>Booking</li>
+        <li><a href="#our-story">Our Story</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#booking">Booking</a></li>
       </div>
     </ul>
   </div>
-  <main>
+  <main id="main">
     <div class="container">
       <div class="top__wrapper">
         <div class="logo"></div>
@@ -50,20 +51,31 @@
       </div>
     </div>
   </main>
-  <article>
+  <article id="our-story">
     <div class="container">
       <div class="two-column__wrapper">
         <div class="column">
           <div class="column__image">
             <img src="./img/image-top.png" alt="donut with chocolate">
           </div>
-          @@include
+          @@include('./partials/about__item/_about__item.html',
+            {"flowDireciton":"",
+              "titleText":"the finest ingredients",
+              "line-lenth":"",
+              "aboutText":"Try this and you will see the difference. You will find funny stories written by funny people. Brief explanation about what is going on in our store right now.."
+
+            })
           <div class="column__image">
             <img src="./img/image-bot.png" alt="six donuts in box">
           </div>
         </div>
         <div class="column">
-          @@include
+          @@include('./partials/about__item/_about__item.html',
+          {"flowDireciton":"--row",
+            "titleText":"out story",
+            "line-lenth":"--lenth285px",
+            "aboutText":"Your story begins with an idea. A small sparks and it took off shooting to the stars. This place is for you to write whatever thing you have going on. From start till now, every choices that we made will decide the outcome. Stay true and bold !!!"
+          })
           <div class="column__image">
             <img src="./img/douts-3.png" alt="six donuts in box">
           </div>
@@ -71,7 +83,7 @@
       </div>
     </div>
   </article>
-  <section>
+  <section id="reviews">
     <div class="gradient"></div>
     <div class="container">
       <div class="carousel">
@@ -89,15 +101,11 @@
             <span class="username">Stacy</span>,<span class="user-location">My City</span>
           </p>
         </div>
-        <div class="carousel__dots">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+       
       </div>
     </div>
   </section>
-  <div class="event">
+  <div class="event" id="events">
     <div class="container">
       <div class="event__title">
         <p>
@@ -155,7 +163,7 @@
       </div>
     </div>
   </div>
-  <div class="location">
+  <div class="location" id="location">
     <div class="container">
       <div class="location__content">
         <div class="location__map">
@@ -186,7 +194,7 @@
       </div>
     </div>
   </div>
-  <div class="booking" id="booking">
+   <div class="booking" id="booking"> 
     <div class="container">
       <div class="booking__wrapeer">
         <p class="booking__title">
@@ -220,6 +228,7 @@
       </div>
     </div>
   </div>
+ 
   <footer>
     <div class="container">
       <div class="column">
@@ -233,12 +242,12 @@
       </div>
       <div class="column">
         <div class="footer__navigation">
-          <a href="">Home</a>
-          <a href="">Our Story</a>
+          <a href="#main">Home</a>
+          <a href="#our-story">Our Story</a>
           <a href="">Testimonials</a>
-          <a href="">Events</a>
-          <a href="">Locations</a>
-          <a href="">Booking</a>
+          <a href="#events">Events</a>
+          <a href="#locations">Locations</a>
+          <a href="#booking">Booking</a>
           <a href="">Terms of Service</a>
         </div>
         <div class="social__logos">

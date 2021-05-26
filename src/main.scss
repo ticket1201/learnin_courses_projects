@@ -1,4 +1,9 @@
 @import "./partials/event__item/event__item.scss";
+@import "./partials/about__item/about__item.scss";
+
+html{
+  scroll-behavior: smooth;
+}
 
 body * {
   outline: 1px solid lightgrey;
@@ -7,6 +12,7 @@ body * {
 body{
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+ 
 }
 
 main{
@@ -26,6 +32,9 @@ main{
   display: flex;
   align-items: center;
   z-index: 10;
+  @media screen and (max-width:1000px) {
+    right: 10%;
+  }
   &>div{
     margin: 10px;
   }
@@ -67,9 +76,11 @@ main{
   background-color: rgba($color: #cecece, $alpha: 0.75)  ;
   border-radius: 5px;
   box-shadow: 6px 6px 14px 4px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
 
   & li{
     padding: 5px;
+    
   }
   & li:hover{
     color: black;
@@ -77,6 +88,12 @@ main{
     border-bottom: 2px solid white;
     border-radius: 5px;
   }
+
+  & a,a:visited{
+    text-decoration: none;
+    color: black;
+  }
+
 }
 
 .container{
@@ -86,6 +103,9 @@ main{
   height: inherit;
   margin: 0 auto;
   box-sizing: border-box;
+  @media screen and (max-width:1000px) {
+    justify-content: center;
+  }
 }
 
 
@@ -114,6 +134,7 @@ main{
 .top__button{
   width: 382px;
   height: 94px;
+  margin: 25px 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -182,12 +203,18 @@ main{
   display: flex;
   padding: 185px 0 145px;
   justify-content: space-between;
+  @media screen and (max-width:1000px) {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
 }
 
 .column{
   display: flex;
   flex-direction: column;
   padding: 0 15px;
+
  &__image img{
    max-width: 100%;
    height: auto;
@@ -259,19 +286,29 @@ section{
 }
 
 .event{
+  padding: 185px 0;
+  @media screen and (max-width:1000px) {
+    padding: 20px 0;
+  }
+
   & .container{
     flex-direction: column;
   }
   & .two-column__wrapper{
-    padding: 51px 0 185px;
+    padding: 53px 0 0;
+    @media screen and (max-width:1000px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__title{
-    margin: 0 auto;
+    margin: 2px auto;
     max-width: 370px;
     font-size: 36px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
+
     & p{
       margin-bottom:10px;
     }
@@ -289,7 +326,7 @@ section{
 .main-event__item{
   position: relative;
   max-width: 470px;
-  max-height: 470px;
+  
   & .main-event__text{
     display: flex;
     flex-direction: column;
@@ -345,25 +382,45 @@ section{
 }
 
 .location{
+  display: flex;
   background: #edc08b;
-  height: 940px;
+  min-height: 940px;
   & .item__inner{
     display: flex;
     align-content: center;
     justify-content: center;
     background: #ffffff;
     flex-grow: 1;
+    padding: 0 25px;
+    @media screen and (max-width:1000px) {
+      width: 100%;
+      padding: 0;;
+      
+    }
+    
   }
   &__content{
     display: flex;
-    height: 570px;
+    min-height: 570px;
     width: 100%;
     padding: 0 15px;
+    @media screen and (max-width:1000px) {
+      width: fit-content;
+      flex-direction: column;
+      align-items: center;
+      margin: 30px 0;
+    }
+    @media screen and (max-width:1000px) {
+      width:100%;
+    }
   }
   & .ifame{
     width:570px;
     height:570px;
     border:0;
+    @media screen and (max-width:620px) {
+        display: none;
+    }
   }
   &__item{
     display: flex;
@@ -373,7 +430,7 @@ section{
   }
   &__title{
     text-transform: uppercase;
-    font-size: 26px;
+    font-size: 36px;
     font-weight: bold;
   }
   &__email{
@@ -415,11 +472,13 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 500px;
+    min-height: 500px;
+    padding: 0 15px;
   }
 
   &__title{
     text-transform: uppercase;
+    text-align: center;
     font-size: 36px;
     font-weight: bold;
     margin: 20px 0;
@@ -433,6 +492,7 @@ section{
    }
 
    &__opentime{
+     text-align: center;
      font-weight: bold;
      font-size: 24px;
      color: #edc08b;
@@ -446,7 +506,7 @@ section{
  
   & input{
     display: inline-block;
-    width: 270px;
+    width: 100%;
     height: 75px;
     margin: 15px;
     color: #b9b9b9;
@@ -460,7 +520,7 @@ section{
   }
 
   & select{
-    width: 270px;
+    width: 100%;
     height: 79px;
     color: #b9b9b9;
     border-width: 2px;
@@ -471,25 +531,30 @@ section{
   
 }
 
-.top__button{
-  margin: 35px 0;
-}
-
-
 footer{
   background-color: black;
-  height: 420px;
+  min-height: 420px;
   color: #434343;
   font-size: 14px;
   
   & .column{
     min-height: 270px;
     padding-right: 70px;
+    @media screen and (max-width:1000px) {
+      padding-right: 5px;
+    }
   }
 
   & .container{
+    min-height: 420px;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width:1000px) {
+      justify-content: space-evenly;
+      & div:last-child{
+        display: none;
+      }
+    }
   }
 
   & a{
