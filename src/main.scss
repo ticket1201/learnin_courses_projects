@@ -386,6 +386,7 @@ section{
   background: #edc08b;
   min-height: 940px;
   & .container{
+    flex-grow: 2;
     @media screen and (max-width:620px) {
       width: 100%;
     }
@@ -398,9 +399,12 @@ section{
     flex-grow: 1;
     padding: 0 25px;
     @media screen and (max-width:1000px) {
+      width: 570px;
+      padding: 0;
+    }
+    @media screen and (max-width:620px) {
       width: 100%;
-      padding: 0;;
-      
+      padding: 0;
     }
     
   }
