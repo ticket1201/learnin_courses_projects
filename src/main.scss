@@ -385,6 +385,11 @@ section{
   display: flex;
   background: #edc08b;
   min-height: 940px;
+  & .container{
+    @media screen and (max-width:620px) {
+      width: 100%;
+    }
+  }
   & .item__inner{
     display: flex;
     align-content: center;
