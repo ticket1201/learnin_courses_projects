@@ -4,13 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./main.scss">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
   <title>Empat Belas</title>
   <script src="./js/main.js" defer></script>
   <script src="https://kit.fontawesome.com/b1cf813757.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 </head>
 
@@ -31,18 +34,19 @@
     </ul>
   </div>
   <main id="main">
+    <div class="gradient"></div>
     <div class="container">
       <div class="top__wrapper">
         <div class="logo"></div>
         <div class="top__text">
           <h1>Delicious & fresh baked Sweets</h1>
         </div>
-        <div class="top__button">
+        <a href="" class="top__button">
           <p>veiw menu </p>
           <span class="material-icons">
             east
           </span>
-        </div>
+        </a>
         <div class="top__icons">
           <div class="icon-sweets"></div>
           <div class="icon-icecream"></div>
@@ -87,23 +91,78 @@
   <section id="reviews">
     <div class="gradient"></div>
     <div class="container">
-      <div class="carousel">
-        <div class="carousel__image">
+      <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-item">
+              <div class="swiper-item__image">
+              </div>
+              <div class="swiper-item__text">
+                Best food I’ve ever tasted. It melts in my mouth
+                and makes me keep wanting more and more.
+                I will definitely recommend this to people I know.
+                No jokes and everytime they made it fresh.
+                Good job you guys ! I am now your loyal fan..
+              </div>
+              <div class="swiper-item__user">
+                <p>
+                  <span class="username">Stacy</span>,<span class="user-location">My City</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-item">
+              <div class="swiper-item__image">
+              </div>
+              <div class="swiper-item__text">
+                Best food I’ve ever tasted. It melts in my mouth
+                and makes me keep wanting more and more.
+                I will definitely recommend this to people I know.
+                No jokes and everytime they made it fresh.
+                Good job you guys ! I am now your loyal fan..
+                    Best food I’ve ever tasted. It melts in my mouth
+                and makes me keep wanting more and more.
+                I will definitely recommend this to people I know.
+                No jokes and everytime they made it fresh.
+                Good job you guys ! I am now your loyal fan..
+              </div>
+              <div class="swiper-item__user">
+                <p>
+                  <span class="username">Stacy</span>,<span class="user-location">My City</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-item">
+              <div class="swiper-item__image">
+              </div>
+              <div class="swiper-item__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Accusamus ea quod quas voluptas non, tempore atque, 
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Accusamus ea quod quas voluptas non, tempore atque, 
+                 quisquam delectus iure libero possimus quaerat quis
+                 dolor ratione. Debitis dolorum inventore cupiditate molestias..
+              </div>
+              <div class="swiper-item__user">
+                <p>
+                  <span class="username">Stacy</span>,<span class="user-location">My City</span>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="carousel__text">
-          Best food I’ve ever tasted. It melts in my mouth
-          and makes me keep wanting more and more.
-          I will definitely recommend this to people I know.
-          No jokes and everytime they made it fresh.
-          Good job you guys ! I am now your loyal fan..
-        </div>
-        <div class="carousel__user">
-          <p>
-            <span class="username">Stacy</span>,<span class="user-location">My City</span>
-          </p>
-        </div>
-       
+        <div class="swiper-pagination"></div>
       </div>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      </script>
     </div>
   </section>
   <div class="event" id="events">
@@ -152,12 +211,12 @@
                 Special Appearance:
                 <span>Name your Artist here</span>
               </p>
-              <div class="top__button small">
+              <a href="" class="top__button small">
                 <p>buy ticket</p>
                 <span class="material-icons">
                   east
                 </span>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -195,7 +254,7 @@
       </div>
     </div>
   </div>
-   <div class="booking" id="booking"> 
+  <div class="booking" id="booking"> 
     <div class="container">
       <div class="booking__wrapeer">
         <p class="booking__title">
@@ -212,24 +271,23 @@
 
         <form action="/test" method="POST" class="form" id="form1">
           <input type="text" placeholder="Name" class="input-name">
-          <select name="location-select" id="location-select" aria-placeholder="Location">
-            <option value="address1">Location</option>
-            <option value="address1">address 1</option>
-            <option value="address2">address 2</option>
+          <select name="location-select" id="location-select" placeholder="Location" > 
+            <option label="Location" ></option>
+            <option value="address1">Address 1</option>
+            <option value="address2">Address 2</option>
           </select>
           <input type="date" placeholder="Date">
-          <input type="time" placeholder="Time">
+          <input type="time" placeholder="Time" min="07:00" max="16:00" step="3600" Value="07:00">
         </form>
         <button type="submit" class="top__button" form="form1">
           <p>book now </p>
-          <span class="material-icons">
-            east
+          <span class="material-icons"> 
+            east  
           </span>
         </button>
       </div>
     </div>
   </div>
- 
   <footer>
     <div class="container">
       <div class="column">
@@ -252,9 +310,9 @@
           <a href="">Terms of Service</a>
         </div>
         <div class="social__logos">
-          <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
-          <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
-          <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com"  target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://facebook.com"  target="_blank"><i class="fab fa-facebook-f"></i></a>
         </div>
       </div>
       <div class="column">
