@@ -3,13 +3,18 @@
     flex-direction: row;
     max-width: 675px;
     margin-bottom: 25px;
+    @media screen and (max-width:570px) {
+        flex-direction: column;
+      }
 }
   
 
 .event__img{
     max-width: 270px;
     height: auto;
-
+    @media screen and (max-width:570px) {
+    margin: 0 auto;
+    }
 }
 
 .event__text{

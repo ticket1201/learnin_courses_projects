@@ -5,9 +5,9 @@ html{
   scroll-behavior: smooth;
 }
 
-//body * {
-// outline: 1px solid lightgrey;
-//}
+// body * {
+//  outline: 1px solid lightgrey;
+// }
 
 body{
   margin: 0;
@@ -64,13 +64,17 @@ main{
 
 .search__wrapper{
   display: flex;
-  cursor: pointer;
+  
+  & label{
+    cursor: pointer;
+  }
 
   & .search{
     height: 40px;
     margin: 0 20px;
     border-radius: 5px;
-    background-color: rgba($color: #ffffff, $alpha: 0);
+    background-color: rgba($color: #ffffff, $alpha: 0); 
+    
   }
 
   & .visually-hidden + .search{
@@ -189,7 +193,15 @@ main{
   color: #ffffff;
   background: #000000;
   text-decoration: none;
-  cursor: pointer;
+  transition: all 0.7s 0s ease-in, all 0.7s 0s ease;
+
+  &:hover{
+    background:rgba(230, 230, 230, 0.55);
+    color: #272727;
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px #949292;
+    
+    }
 
   &.small{
     width: 170px;
@@ -227,6 +239,9 @@ main{
   & div{
     display: inline-block;
     margin: 0px 50px 0 0;
+    &:hover{
+      transform: translateY(-10%);
+    }
   }
 }
 
@@ -293,7 +308,7 @@ section{
 .swiper-container {
   width: 1000px;
   height: 100%;
-
+  
   & .swiper-slide{
     display: flex;
     align-items: baseline;
@@ -419,6 +434,12 @@ section{
 .main-event__item{
   position: relative;
   max-width: 470px;
+
+  & .main-event__img{
+    @media screen and (max-width:570px) {
+      display: none;
+    }
+  }
   
   & .main-event__text{
     display: flex;
@@ -431,6 +452,10 @@ section{
     height: 400px;
     background-color: #ffffff;
     font-size: 16px;
+
+    @media screen and (max-width:570px) {
+      position: static;
+    }
   }
 
   & .main-event__date{
@@ -481,6 +506,9 @@ section{
   display: flex;
   background: #edc08b;
   min-height: 940px;
+  @media screen and (max-width:620px) {
+    height: 100vh;
+  }
 
   & .container{
     flex-grow: 2;
@@ -580,16 +608,27 @@ section{
   &__phone{
     text-decoration: none;
     color: inherit;
+
+    &:hover{
+      text-decoration: underline;
+    }
+
   }
 }
 
 .booking{
-  height: 800px;
+  display: flex;
+  min-height: 800px;
+  align-items: center;
 
   & .container{
     justify-content: center;
   }
- 
+  
+  & button.top__button{
+    border: none;
+  }
+
   &__wrapeer{
     display: flex;
     flex-direction: column;
@@ -625,6 +664,10 @@ section{
   display: flex;
   align-items: center;
   width: 100%;
+
+  @media screen and (max-width:570px) {
+    flex-direction: column;
+  }
  
   & input{
     display: inline-block;
@@ -654,7 +697,7 @@ section{
       color: #b9b9b9;
     }
   }
-}
+ }
 
 
 footer{
@@ -689,6 +732,9 @@ footer{
   & a{
     display: block;
     color: #434343;
+    &:hover{
+      color: rgb(214, 214, 214);
+    }
   }
 
   & img{
@@ -702,8 +748,12 @@ footer{
   }
   
   .footer__navigation{
-    width: 200px;
+    min-width: 200px;
     padding: 9px 0;
+    
+    @media screen and (max-width:620px) {
+    min-width: 100%;
+    }
 
     & a{
       margin: 6px 0;
