@@ -102,10 +102,6 @@ main{
   margin: 10px;
   list-style-type: none;
 
-  &:hover .menu__items{
-    display: block;
-  }
-
   & i{
     font-size: 24px;
     border: 10px solid black;
@@ -115,10 +111,12 @@ main{
   }
 }
 
+
+
 .menu__items{
   display: none;
   position: absolute;
-  top: 100%;
+  top: 120%;
   right: -50%;
   padding: 5px;
   font-size: 1.25rem;
@@ -126,6 +124,10 @@ main{
   border-radius: 5px;
   box-shadow: 6px 6px 14px 4px rgba(0, 0, 0, 0.3);
   white-space: nowrap;
+
+  &.open{
+    display: block;
+  }
 
   & li{
     padding: 5px;
@@ -159,8 +161,7 @@ main{
 
 
 .top__wrapper{
-  min-height: calc(100vh - 55px);
-  padding-top: 55px;
+  min-height: 100vh;
   z-index: 1;
 }
 
@@ -168,13 +169,13 @@ main{
   width: 174px;
   height: 174px;
   background-image: url("./img/Logo.png");
+  margin-top: 7vh;
 }
 
 .top__text{
   display: flex;
   align-items: center;
   max-width: 570px;
-  height: 460px;
 
   & h1{
     font-size: 72px;
@@ -193,7 +194,7 @@ main{
   color: #ffffff;
   background: #000000;
   text-decoration: none;
-  transition: all 0.7s 0s ease-in, all 0.7s 0s ease;
+  transition: all 0.5s 0s ease-in, all 0.5s 0s ease;
 
   &:hover{
     background:rgba(230, 230, 230, 0.55);
@@ -788,5 +789,34 @@ footer{
 
   & .join-program__link{
     margin: 10px 0;
+  }
+}
+
+.toTop{
+  display: none; 
+  position: fixed; 
+  bottom: 5%; 
+  right: 8%; 
+  z-index: 1; 
+  border: none; 
+  background-color: rgba($color: #d369a0, $alpha: 0.9);
+  color: white; 
+  cursor: pointer; 
+  padding: 10px 15px;
+  border-radius: 25%; 
+  box-shadow: 4px 4px 5px 0px rgba(67, 72, 77 , .55);
+
+  
+  
+  &:hover {
+    background-color: #555; 
+  }
+
+  &.block{
+    display: block;
+  }
+
+  & i{
+    font-size: 35px;
   }
 }
