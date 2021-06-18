@@ -11,16 +11,24 @@ btnEl.addEventListener('click', toggleMenu);
 
 // Scroll to top btn action
 
-var toTopBtn = document.querySelector(".toTop");
+const select = document.querySelector("main");
+const toTopBtn = document.querySelector(".toTop");
 
-window.onscroll = function() {scrollFunction()};
+const objOptions = {
+  root: null,
+  rootMargin: "-100px",
+};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    toTopBtn.classList.add("block");
-  }
-  else{
+const sectionObserver = new IntersectionObserver(callBackFunction, objOptions);
+sectionObserver.observe(select);
+
+function callBackFunction(entries) {
+  const [entry] = entries;
+  //console.log(entry);
+  if (entry.isIntersecting) {
     toTopBtn.classList.remove("block");
+  } else {
+    toTopBtn.classList.add("block");
   }
 }
 
