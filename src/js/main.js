@@ -12,11 +12,11 @@ btnEl.addEventListener('click', toggleMenu);
 // Scroll to top btn action
 
 const select = document.querySelector("main");
-const toTopBtn = document.querySelector(".toTop");
+const toTopBtn = document.querySelector(".scrollBtn");
 
 const objOptions = {
   root: null,
-  rootMargin: "-100px",
+  rootMargin: "-400px",
 };
 
 const sectionObserver = new IntersectionObserver(callBackFunction, objOptions);
