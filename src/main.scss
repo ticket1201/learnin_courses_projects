@@ -17,6 +17,7 @@ body{
 main{
   background-image: url("./img/main.png");
   background-size: cover;
+  background-position-y: 50%;
 
   & .gradient{
     position: absolute;
@@ -197,7 +198,7 @@ main{
   transition: all 0.5s 0s ease-in, all 0.5s 0s ease;
 
   &:hover{
-    background:rgba(230, 230, 230, 0.55);
+    background:rgba(230, 230, 230, 0.7);
     color: #272727;
     transform: scale(1.05);
     box-shadow: 10px 10px 15px #949292;
