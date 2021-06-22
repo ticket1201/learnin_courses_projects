@@ -104,6 +104,9 @@ main{
   padding: 0;
   margin: 10px;
   list-style-type: none;
+ 
+
+ 
 
   & i{
     font-size: 24px;
@@ -111,6 +114,11 @@ main{
     border-radius: 6px;
     background-color: black;
     color: white;
+    transition: all 0.5s 0s ease-in, all 0.5s 0s ease;
+    &:hover{
+      transform: scale(1.05);
+      box-shadow: 10px 10px 15px #949292;
+    }
   }
 }
 
