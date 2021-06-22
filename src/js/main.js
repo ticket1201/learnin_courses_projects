@@ -16,7 +16,7 @@ const toTopBtn = document.querySelector(".scrollBtn");
 
 const objOptions = {
   root: null,
-  rootMargin: "-400px",
+  rootMargin: "-5px",
 };
 
 const sectionObserver = new IntersectionObserver(callBackFunction, objOptions);

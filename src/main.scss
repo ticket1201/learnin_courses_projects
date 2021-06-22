@@ -1,13 +1,15 @@
 @import "./partials/event__item/event__item.scss";
 @import "./partials/about__item/about__item.scss";
 
+
+
 html{
   scroll-behavior: smooth;
 }
 
-// body * {
-//  outline: 1px solid lightgrey;
-// }
+body * {
+  outline: 1px solid lightgrey;
+}
 
 body{
   margin: 0;
@@ -74,7 +76,7 @@ main{
     height: 40px;
     margin: 0 20px;
     border-radius: 5px;
-    background-color: rgba($color: #ffffff, $alpha: 0); 
+    background-color: rgba($color: #ffffff, $alpha: 0.9); 
     
   }
 
@@ -117,8 +119,8 @@ main{
 .menu__items{
   display: none;
   position: absolute;
-  top: 120%;
-  right: -50%;
+  top: 140%;
+  right: -30%;
   padding: 5px;
   font-size: 1.25rem;
   background-color: rgba($color: #cecece, $alpha: 0.75)  ;
@@ -179,13 +181,17 @@ main{
   max-width: 570px;
 
   & h1{
-    font-size: 72px;
+    font-size: 4.5rem;
     text-transform: uppercase;
+
+    @media screen and (max-width:440px) {
+      font-size: 2.8rem;
+    }
   }
 }
 
 .top__button{
-  width: 382px;
+  max-width: 382px;
   height: 94px;
   margin: 25px 0;
   display: flex;
@@ -211,21 +217,21 @@ main{
     border-radius: 4px;
 
     & p{
-      font-size: 14px;
+      font-size: 0.875rem;
     }
 
     & span{
-      font-size: 18px;
+      font-size: 1.125rem;
     }
   }
 
   & p{
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   & span{
-    font-size: 30px;
+    font-size: 1.875;
   }
 
   .btn:hover {
@@ -238,9 +244,18 @@ main{
 .top__icons{
   padding: 60px 0;
 
+  @media screen and (max-width:440px) {
+    padding: 20px 0;
+    display: flex;
+  }
+  
   & div{
     display: inline-block;
     margin: 0px 50px 0 0;
+    @media screen and (max-width:440px) {
+      margin: 0 auto;
+    }
+    
     &:hover{
       transform: translateY(-10%);
     }
@@ -341,7 +356,7 @@ section{
   max-width: 1000px;
   margin: 0 auto;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
 
   &__image{
@@ -413,7 +428,7 @@ section{
   &__title{
     margin: 2px auto;
     max-width: 370px;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -424,7 +439,7 @@ section{
 
     & p:last-child{
       color: #b9b9b9;
-      font-size:24px;
+      font-size:1.5rem;
       text-transform: capitalize;
       font-weight: normal;
       margin-top: 0;
@@ -453,10 +468,11 @@ section{
     width: 400px;
     height: 400px;
     background-color: #ffffff;
-    font-size: 16px;
+    font-size: 1rem;
 
     @media screen and (max-width:570px) {
       position: static;
+      width: inherit;
     }
   }
 
@@ -468,19 +484,19 @@ section{
 
    & .date-numb{
      margin: 5px;
-     font-size: 60px;
+     font-size: 3.75rem;
      color: #edc08a;
    }
 
    & .date-month{
-    font-size: 18px;
+    font-size: 1.125rem;
     margin: 0;
     color: #ffffff;
    }
   }
 
   & .main-event__name{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
     margin: 40px 0 7px;
   }
@@ -580,7 +596,7 @@ section{
 
   &__title{
     text-transform: uppercase;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: bold;
   }
 
@@ -629,6 +645,10 @@ section{
   
   & button.top__button{
     border: none;
+    width: 310px;
+    @media screen and (max-width:350px) {
+      width: 80%;
+    }
   }
 
   &__wrapeer{
@@ -642,7 +662,7 @@ section{
   &__title{
     text-transform: uppercase;
     text-align: center;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: bold;
     margin: 20px 0;
   }
@@ -656,7 +676,7 @@ section{
    &__opentime{
      text-align: center;
      font-weight: bold;
-     font-size: 24px;
+     font-size: 1.5rem;
      color: #edc08b;
      margin: 20px 0;
    }
@@ -710,7 +730,7 @@ footer{
   background-color: black;
   min-height: 420px;
   color: #434343;
-  font-size: 14px;
+  font-size: 0.875rem;
   
   & .column{
     min-height: 270px;
